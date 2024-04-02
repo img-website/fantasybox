@@ -8,14 +8,14 @@
 </head>
 <body class="p-0 m-0 overflow-x-hidden">
     <section class="fixed w-full top-0 z-50">
-        <div class="mx-auto flex bgtransparent max-w-7xl items-center justify-between p-6 lg:px-8 bg-gradient-to-l from-theme1 rounded-b-xl">
+        <div class="mx-auto flex bgtransparent max-w-7xl items-center justify-between p-6 lg:px-8 bg-gradient-to-r from-theme3 from-5% via-[#2e2e31] via-11% to-theme1 to-100% rounded-b-xl">
             <!-- <div class="bg-theme2 w-60 h-[50px] rounded-tr-2xl z-10 absolute left-0 top-0 block"></div> -->
             <div class="flex lg:flex z-20">
                 <a href="" class="logo h-8 md:h-12">
                     <img class="size-full object-contain" src="https://www.fantasybox.in/assets/img/brand/white-Final.png" alt="">
                 </a>
             </div>
-            <div class="flex lg:gap-x-8 gap-y-5 mr-0 items-end">
+            <div class="lg:flex hidden lg:gap-x-8 gap-y-5 mr-0 items-end">
                 <a class="text-white" href="">Home</a>
                 <a class="text-white" href="">About</a>
                 <a class="text-white" href="">Fantasy Sports</a>
@@ -23,64 +23,199 @@
                 <a class="text-white" href="">Blogs</a>
                 <a class="text-white" href="">Contact us</a>
             </div>
-            <a href="" class="text-white bg-theme2 px-6 py-3 rounded-md">
-                Play Now
+            <a href="https://www.fantasybox.in/contact-us" class="inline-flex justify-center rounded-lg max-md:text-xs text-sm font-semibold max-md:py-2 py-3 px-4 bg-transparent text-white ring-2 ring-white group transition-all overflow-hidden">
+                <span class="flex items-center gap-1 visible opacity-100 group-hover:invisible group-hover:opacity-0 transition-all group-hover:translate-y-[-15px]">
+                    Play Now
+                    <svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18.001 20H20V22H12C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 15.2712 20.4293 18.1755 18.001 20ZM12 10C13.1046 10 14 9.10457 14 8C14 6.89543 13.1046 6 12 6C10.8954 6 10 6.89543 10 8C10 9.10457 10.8954 10 12 10ZM8 14C9.10457 14 10 13.1046 10 12C10 10.8954 9.10457 10 8 10C6.89543 10 6 10.8954 6 12C6 13.1046 6.89543 14 8 14ZM16 14C17.1046 14 18 13.1046 18 12C18 10.8954 17.1046 10 16 10C14.8954 10 14 10.8954 14 12C14 13.1046 14.8954 14 16 14ZM12 18C13.1046 18 14 17.1046 14 16C14 14.8954 13.1046 14 12 14C10.8954 14 10 14.8954 10 16C10 17.1046 10.8954 18 12 18Z"></path></svg>
+                </span>
+                <span class="flex items-center gap-1 invisible opacity-0 group-hover:visible group-hover:opacity-100 text-white absolute transition-all overflow-hidden translate-y-[10px] group-hover:translate-y-[0px]">
+                    Click Me
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="h-4 w-3" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+                </span>
             </a>
+            <!-- <a href="" class="text-theme1 font-semibold bg-white sm:px-6 sm:py-3 px-4 py-2 rounded-md">
+                Play Now
+            </a> -->
         </div>
     </section>
-    <section class="relative p-0 m-0 h-full">
+    <section class="relative p-0 m-0 h-[600px] lg:h-full">
         <img class="object-cover size-full" src="./assets/img/hero.png" alt="">
-        <div class="absolute top-0 left-0 bg-black/20 w-full h-full rounded-b-2xl mix-blend-multiply"></div>
-            <div class="w-full px-4 absolute z-5 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div class="absolute top-0 left-0 w-full mix-blend-multiply"><img class="object-cover h-[600px] lg:h-full" src="./assets/img/overlay.svg" alt=""></div>
+            <div class="w-full px-4 absolute z-5 left-1/2 top-[42%] sm:top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <div class="mx-auto max-w-[800px] text-center">
-                    <h1 class="mb-5 text-3xl font-bold leading-tight text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight"><span class="">Fantasy Sports</span> App Development Company</h1>
-                    <p class="mb-12 text-base text-white !leading-relaxed text-body-color sm:text-lg md:text-xl">STurn your fantasy sports dreams into reality in just 72 hours! Build your own custom fantasy sports app effortlessly with our intuitive platform.</p>
-                    <div class="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                    <a class="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80" href="">Call Now</a>
-                    <button class="group relative min-h-[50px] w-56 overflow-hidden border border-theme2 bg-white text-theme2 shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-theme2 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-theme2 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
+                    <h1 class="mb-5 xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-2xl font-bold leading-tight text-white sm:leading-tight  md:leading-tight"><span class="">Fantasy Sports</span> App Development Company</h1>
+                    <p class="lg:mb-12 mb-8 lg:text-base sm:text-md md:text-lg text-white !leading-relaxed text-body-color">STurn your fantasy sports dreams into reality in just 72 hours! Build your own custom fantasy sports app effortlessly with our intuitive platform.</p>
+                    <!-- <div class="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                    <a class="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80" href="">Call Now</a> -->
+                    <!-- <button class="group relative min-h-[50px] w-56 overflow-hidden border border-theme2 bg-white text-theme2 shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-0 before:w-1/4 before:bg-theme2 before:duration-500 after:absolute after:bottom-0 after:right-0 after:h-0 after:w-1/4 after:bg-theme2 after:duration-500 hover:text-white hover:before:h-full hover:after:h-full">
                         <span class="top-0 flex h-full w-full items-center justify-center before:absolute before:bottom-0 before:left-1/4 before:z-0 before:h-0 before:w-1/4 before:bg-theme2 before:duration-500 after:absolute after:right-1/4 after:top-0 after:z-0 after:h-0 after:w-1/4 after:bg-theme2 after:duration-500 hover:text-white group-hover:before:h-full group-hover:after:h-full"></span>
                         <span class="absolute bottom-0 left-0 right-0 top-0 z-10 flex h-full w-full items-center justify-center group-hover:text-white">Start Your Fantasy App Now</span>
-                    </button>
+                    </button> -->
+                    <a href="https://www.fantasybox.in/contact-us" class="inline-flex justify-center rounded-lg max-md:text-xs text-sm font-semibold max-md:py-2 py-3 px-4 bg-transparent text-white ring-2 ring-white group transition-all overflow-hidden">
+                        <span class="flex items-center gap-1 visible opacity-100 group-hover:invisible group-hover:opacity-0 transition-all group-hover:translate-y-[-15px]">
+                            Start Your Fantasy App Now
+                            <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg"><path d="M436.9 364.8c-14.7-14.7-50-36.8-67.4-45.1-20.2-9.7-27.6-9.5-41.9.8-11.9 8.6-19.6 16.6-33.3 13.6-13.7-2.9-40.7-23.4-66.9-49.5-26.2-26.2-46.6-53.2-49.5-66.9-2.9-13.8 5.1-21.4 13.6-33.3 10.3-14.3 10.6-21.7.8-41.9C184 125 162 89.8 147.2 75.1c-14.7-14.7-18-11.5-26.1-8.6 0 0-12 4.8-23.9 12.7-14.7 9.8-22.9 18-28.7 30.3-5.7 12.3-12.3 35.2 21.3 95 27.1 48.3 53.7 84.9 93.2 124.3l.1.1.1.1c39.5 39.5 76 66.1 124.3 93.2 59.8 33.6 82.7 27 95 21.3 12.3-5.7 20.5-13.9 30.3-28.7 7.9-11.9 12.7-23.9 12.7-23.9 2.9-8.1 6.2-11.4-8.6-26.1z"></path></svg> -->
+                        </span>
+                        <span class="flex items-center gap-1 invisible opacity-0 group-hover:visible group-hover:opacity-100 text-white absolute transition-all overflow-hidden translate-y-[10px] group-hover:translate-y-[0px]">
+                            Click Me
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="h-4 w-3" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+                        </span>
+                    </a>
+                    
+                    <a href="https://www.fantasybox.in/contact-us" class="ms-5 inline-flex justify-center rounded-lg max-md:text-xs text-sm font-semibold max-md:py-2 py-3 px-4 bg-transparent text-white ring-2 ring-white group transition-all overflow-hidden">
+                        <span class="flex items-center gap-1 visible opacity-100 group-hover:invisible group-hover:opacity-0 transition-all group-hover:translate-y-[-15px]">
+                            Call Now
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg"><path d="M436.9 364.8c-14.7-14.7-50-36.8-67.4-45.1-20.2-9.7-27.6-9.5-41.9.8-11.9 8.6-19.6 16.6-33.3 13.6-13.7-2.9-40.7-23.4-66.9-49.5-26.2-26.2-46.6-53.2-49.5-66.9-2.9-13.8 5.1-21.4 13.6-33.3 10.3-14.3 10.6-21.7.8-41.9C184 125 162 89.8 147.2 75.1c-14.7-14.7-18-11.5-26.1-8.6 0 0-12 4.8-23.9 12.7-14.7 9.8-22.9 18-28.7 30.3-5.7 12.3-12.3 35.2 21.3 95 27.1 48.3 53.7 84.9 93.2 124.3l.1.1.1.1c39.5 39.5 76 66.1 124.3 93.2 59.8 33.6 82.7 27 95 21.3 12.3-5.7 20.5-13.9 30.3-28.7 7.9-11.9 12.7-23.9 12.7-23.9 2.9-8.1 6.2-11.4-8.6-26.1z"></path></svg>
+                        </span>
+                        <span class="flex items-center gap-1 invisible opacity-0 group-hover:visible group-hover:opacity-100 text-white absolute transition-all overflow-hidden translate-y-[10px] group-hover:translate-y-[0px]">
+                            Click Me
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="h-4 w-3" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+                        </span>
+                    </a>
                     <!-- <a class="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90" href="">Start Your Fantasy App Now</a> -->
                     </div>
                 </div>
             </div>
             
-        <section class="w-full h-96 absolute -bottom-40">
+        <section class="w-full h-96 absolute lg:-bottom-40 -bottom-[14rem]">
             <div class="heroBottom max-w-4xl mx-auto shadow ">
-                <img class="size-full object-contain relative" src="./assets/img/second.png" alt="">
-                <div class="textBox absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <div class="grid grid-cols-4 gap-12">
-                        <div>
-                            <div class="icon text-theme2">
-                                <svg class="size-8 object-contain" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg>
+                <img class="size-full object-contain relative sm:block hidden" src="./assets/img/second.png" alt="">
+                <div class="textBox bg-white sm:bg-transparent w-full sm:w-[600px] md:w-[800px] lg:w-[925px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 sm:pt-[80px] pt-[20px] sm:mt-0 pb-6">
+                    <div class="grid sm:grid-cols-4 grid-cols-2 gap-4 lg:mt-[3rem] sm:px-16 px-[1rem]">
+                        <div class="w-auto border border-gray-200 p-5 xl:px-8 px-3 rounded-md flex flex-col shadow-lg shadow-slate-900/20 shadow-b-2 shadow-r-[3px] -shadow-spread-2">
+                            <div class="icon text-theme2 rounded-md mx-auto">
+                                <svg class="size-[3rem] sm:size-14 object-contain" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg>
                             </div>
-                            <div class="text-4xl text-slate-400 font-extrabold">250+</div>
-                            <div  class="text-theme2 text-xl font-semibold">Clients</div>
+                            <div class="text-xl text-slate-400 font-extrabold text-center mt-4">250+</div>
+                            <div  class="text-theme2 xl:text-xl text-lg font-semibold text-center">Clients</div>
                         </div>
-                        <div>
+                        <div class="w-auto border border-gray-200 p-5 xl:px-8 px-3 rounded-md flex flex-col shadow-lg shadow-slate-900/20 shadow-b-2 shadow-r-[3px] -shadow-spread-2">
+                            <div class="icon text-theme2 rounded-md mx-auto">
+                                <svg class="size-[3rem] sm:size-14 object-contain" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg>
+                            </div>
+                            <div class="text-xl text-slate-400 font-extrabold text-center mt-4">90%</div>
+                            <div  class="text-theme2 xl:text-xl text-lg font-semibold text-center">Happy Users</div>
+                        </div>
+                        <div class="w-auto border border-gray-200 p-5 xl:px-8 px-3 rounded-md flex flex-col shadow-lg shadow-slate-900/20 shadow-b-2 shadow-r-[3px] -shadow-spread-2">
+                            <div class="icon text-theme2 rounded-md mx-auto">
+                                <svg class="size-[3rem] sm:size-14 object-contain" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg>
+                            </div>
+                            <div class="text-xl text-slate-400 font-extrabold text-center mt-4">250+</div>
+                            <div  class="text-theme2 xl:text-xl text-lg font-semibold text-center">Develop App</div>
+                        </div>
+                        <div class="w-auto border border-gray-200 p-5 xl:px-8 px-3 rounded-md flex flex-col shadow-lg shadow-slate-900/20 shadow-b-2 shadow-r-[3px] -shadow-spread-2">
+                            <div class="icon text-theme2 rounded-md mx-auto">
+                                <svg class="size-[3rem] sm:size-14 object-contain" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg>
+                            </div>
+                            <div class="text-xl text-slate-400 font-extrabold text-center mt-4">100 M</div>
+                            <div  class="text-theme2 xl:text-xl text-lg font-semibold text-center">Downloads</div>
+                        </div>
+
+                        <!-- <div>
                             <div class="icon text-theme2">
                                 <svg class="size-8 object-contain" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg>
                             </div>
                             <div class="text-4xl text-slate-400 font-extrabold">98%</div>
                             <div  class="text-theme2 text-xl font-semibold">Happy Users</div>
-                        </div><div>
+                        </div>
+                        <div>
                             <div class="icon text-theme2">
                                 <svg class="size-8 object-contain" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg>
                             </div>
                             <div class="text-4xl text-slate-400 font-extrabold">250+</div>
                             <div  class="text-theme2 text-xl font-semibold">Develop App</div>
-                        </div><div>
+                        </div>
+                        <div>
                             <div class="icon text-theme2">
                                 <svg class="size-8 object-contain" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg>
                             </div>
                             <div class="text-4xl text-slate-400 font-extrabold">100m</div>
                             <div  class="text-theme2 text-xl font-semibold">Downloads</div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </section>
+    </section>
+    <section class="bg-gradient-to-r from-theme3 to-theme2 lg:mt-[130px] md:mt-[160px] mt-[220px] mb-10">
+        <div class="flex flex-col lg:flex-row items-center mx-auto max-w-7xl px-6 lg:px-8 md:py-20 py-10">
+            <div class="w-1/2 pe-8 mb-8 lg:mb-0">
+                <div class="border border-theme1 px-10 py-1 rounded-full text-theme1 font-normal inline-block mb-5">Fantasy</div>
+                <div class="text-4xl text-white font-bold mb-5">We Are <span class="text-theme1">FantasyBox</span></div>
+                <div class="text-sm md:text-base leading-7 text-white">FantasyBox is a renowned and customer-centric fantasy sports app development company that brings the thrill of sports and gaming together. As ardent sports fans and tech enthusiasts, we are passionate about creating top-notch fantasy sports platforms that cater to the diverse interests of sports enthusiasts worldwide.We constantly push the boundaries of technology and creativity to provide cutting-edge solutions. Our team stays updated with the latest trends in the industry to deliver innovative and engaging fantasy sports apps.Our track record speaks for itself. With years of experience in the industry, we have successfully delivered 250+ fantasy applications, gaining trust and recognition from clients across the globe.
+                </div>
+                <div class="mt-5">
+                    <a href="https://www.fantasybox.in/contact-us" class="inline-flex justify-center rounded-lg max-md:text-xs text-sm font-semibold max-md:py-2 py-3 px-4 bg-transparent text-white ring-2 ring-white group transition-all overflow-hidden">
+                        <span class="flex items-center gap-1 visible opacity-100 group-hover:invisible group-hover:opacity-0 transition-all group-hover:translate-y-[-15px]">
+                            Learn More
+                            <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg"><path d="M436.9 364.8c-14.7-14.7-50-36.8-67.4-45.1-20.2-9.7-27.6-9.5-41.9.8-11.9 8.6-19.6 16.6-33.3 13.6-13.7-2.9-40.7-23.4-66.9-49.5-26.2-26.2-46.6-53.2-49.5-66.9-2.9-13.8 5.1-21.4 13.6-33.3 10.3-14.3 10.6-21.7.8-41.9C184 125 162 89.8 147.2 75.1c-14.7-14.7-18-11.5-26.1-8.6 0 0-12 4.8-23.9 12.7-14.7 9.8-22.9 18-28.7 30.3-5.7 12.3-12.3 35.2 21.3 95 27.1 48.3 53.7 84.9 93.2 124.3l.1.1.1.1c39.5 39.5 76 66.1 124.3 93.2 59.8 33.6 82.7 27 95 21.3 12.3-5.7 20.5-13.9 30.3-28.7 7.9-11.9 12.7-23.9 12.7-23.9 2.9-8.1 6.2-11.4-8.6-26.1z"></path></svg> -->
+                        </span>
+                        <span class="flex items-center gap-1 invisible opacity-0 group-hover:visible group-hover:opacity-100 text-white absolute transition-all overflow-hidden translate-y-[10px] group-hover:translate-y-[0px]">
+                            Click Me
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="h-4 w-3" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+                        </span>
+                    </a>
+                </div>
+                <!-- <div class="text-md text-white font-normal mb-5">We constantly push the boundaries of technology and creativity to provide cutting-edge solutions. Our team stays updated with the latest trends in the industry to deliver innovative and engaging fantasy sports apps.
+                </div>
+                <div class="text-md text-white font-normal mb-5">Our track record speaks for itself. With years of experience in the industry, we have successfully delivered 250+ fantasy applications, gaining trust and recognition from clients across the globe.
+                </div> -->
+            </div>
+            <div class="w-1/2">
+                <div class="flex flex-col gap-4">
+                    <div>
+                        <div class="w-full h-auto">
+                            <img class="size-full object-cover rounded-sm" src="./assets/img/about.png" alt="">
+                        </div>
+                    </div>
+                    <!-- <div class="flex gap-4">
+                        <div class="w-1/2 h-auto"><img class="size-full object-cover rounded-sm" src="https://themesfamily.com/2023/hakam/assets/img/portfolio/2.jpg" alt=""></div>
+                        <div class="w-1/2 h-auto"><img class="size-full object-cover rounded-sm" src="https://themesfamily.com/2023/hakam/assets/img/portfolio/3.jpg" alt=""></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="bg-slate-20 z-30 relative lg:mt-[130px] md:mt-[160px] mt-[220px] mb-20">
+        <img class="-z-10 absolute -top-[40px] left-[480px] w-full h-full object-contain" src="https://framerusercontent.com/images/dL4Doq8wHmaZSDs47M5t93qb3E.svg" alt="">
+        <div class="flex z-10 flex-col lg:flex-row items-center mx-auto max-w-7xl px-6 lg:px-8 md:py-20 py-10">
+            <div class="w-1/2 pe-8 mb-8 lg:mb-0">
+                <div class="border border-theme1 px-10 py-1 rounded-full text-theme1 font-normal inline-block mb-5">Fantasy</div>
+                <div class="text-4xl text-black font-bold mb-5">We Are <span class="text-theme1">FantasyBox</span></div>
+                <div class="text-sm md:text-base leading-7 text-black">FantasyBox is a renowned and customer-centric fantasy sports app development company that brings the thrill of sports and gaming together. As ardent sports fans and tech enthusiasts, we are passionate about creating top-notch fantasy sports platforms that cater to the diverse interests of sports enthusiasts worldwide.We constantly push the boundaries of technology and creativity to provide cutting-edge solutions. Our team stays updated with the latest trends in the industry to deliver innovative and engaging fantasy sports apps.Our track record speaks for itself. With years of experience in the industry, we have successfully delivered 250+ fantasy applications, gaining trust and recognition from clients across the globe.
+                </div>
+                <div class="mt-5">
+                    <a href="https://www.fantasybox.in/contact-us" class="inline-flex justify-center rounded-lg max-md:text-xs text-sm font-semibold max-md:py-2 py-3 px-4 bg-transparent text-black ring-2 ring-black group transition-all overflow-hidden">
+                        <span class="flex items-center gap-1 visible opacity-100 group-hover:invisible group-hover:opacity-0 transition-all group-hover:translate-y-[-15px]">
+                            Learn More
+                            <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg"><path d="M436.9 364.8c-14.7-14.7-50-36.8-67.4-45.1-20.2-9.7-27.6-9.5-41.9.8-11.9 8.6-19.6 16.6-33.3 13.6-13.7-2.9-40.7-23.4-66.9-49.5-26.2-26.2-46.6-53.2-49.5-66.9-2.9-13.8 5.1-21.4 13.6-33.3 10.3-14.3 10.6-21.7.8-41.9C184 125 162 89.8 147.2 75.1c-14.7-14.7-18-11.5-26.1-8.6 0 0-12 4.8-23.9 12.7-14.7 9.8-22.9 18-28.7 30.3-5.7 12.3-12.3 35.2 21.3 95 27.1 48.3 53.7 84.9 93.2 124.3l.1.1.1.1c39.5 39.5 76 66.1 124.3 93.2 59.8 33.6 82.7 27 95 21.3 12.3-5.7 20.5-13.9 30.3-28.7 7.9-11.9 12.7-23.9 12.7-23.9 2.9-8.1 6.2-11.4-8.6-26.1z"></path></svg> -->
+                        </span>
+                        <span class="flex items-center gap-1 invisible opacity-0 group-hover:visible group-hover:opacity-100 text-black absolute transition-all overflow-hidden translate-y-[10px] group-hover:translate-y-[0px]">
+                            Click Me
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="h-4 w-3" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
+                        </span>
+                    </a>
+                </div>
+                <!-- <div class="text-md text-white font-normal mb-5">We constantly push the boundaries of technology and creativity to provide cutting-edge solutions. Our team stays updated with the latest trends in the industry to deliver innovative and engaging fantasy sports apps.
+                </div>
+                <div class="text-md text-white font-normal mb-5">Our track record speaks for itself. With years of experience in the industry, we have successfully delivered 250+ fantasy applications, gaining trust and recognition from clients across the globe.
+                </div> -->
+            </div>
+            <div class="w-1/2">
+                <div class="flex flex-col gap-4">
+                    <div>
+                        <div class="w-full h-auto">
+                            <img class="size-full object-cover rounded-sm" src="./assets/img/about.png" alt="">
+                        </div>
+                    </div>
+                    <!-- <div class="flex gap-4">
+                        <div class="w-1/2 h-auto"><img class="size-full object-cover rounded-sm" src="https://themesfamily.com/2023/hakam/assets/img/portfolio/2.jpg" alt=""></div>
+                        <div class="w-1/2 h-auto"><img class="size-full object-cover rounded-sm" src="https://themesfamily.com/2023/hakam/assets/img/portfolio/3.jpg" alt=""></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

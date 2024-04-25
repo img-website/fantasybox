@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FantasyBox</title>
     <link rel="stylesheet" href="./assets/css/output.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
 </head>
 <body>
 
@@ -249,5 +253,172 @@
     </div>
 <!-- sub section ends -->
 
+<!-- testimonls now section start -->
+<div class="relative bg-gray-900 py-8 sm:py-16 select-none text-white">
+    <div class="text-white/10">
+        <svg aria-hidden="true" class="absolute inset-0 h-full w-full">
+            <defs>
+                <pattern id="s3" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" patternTransform="translate(0 80)">
+                    <path d="M0 128V.5H128" fill="none" stroke="currentColor"></path>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#s3)"></rect>
+        </svg>
+    </div>
+    <div class="mx-auto px-4 sm:px-6 md:max-w-3xl md:px-4 lg:px-2 relative">
+        <p class="max-md:text-2xl/tight max-xl:text-3xl/tight text-4xl/tight tracking-[-0.04em] text-center">
+            <span class="font-normal">What Our Clients </span> 
+            <span class="font-bold text-white"> Have to Say?</span>
+        </p>
+        <div class="md:text-base text-sm opacity-70 mt-3 mb-lg-1 text-center">
+            Dive into the testimonials that paint a vivid picture of our journey with our potential client so far. Take a glimpse into our exceptional assistance and begin your success story with us today.
+        </div>
+    </div>
+    <div class="swiper testimonialsSwiper w-full" 
+        data-swiper='{
+            "slidesPerView": 2,
+            "spaceBetween": 10,
+            "speed": 2000,
+            "autoplay": {"enabled": true, "delay": 2500},
+            "loop": true,
+            "effect": "coverflow",
+            "centeredSlides": true,
+            "breakpoints": {
+                "320": {"slidesPerView": 1.3, "spaceBetween": 0},
+                "480": {"slidesPerView": 1.4, "spaceBetween": 10},
+                "640": {"slidesPerView": 1.5, "spaceBetween": 30},
+                "1024": {"slidesPerView": 1.8, "spaceBetween": 30},
+                "1350": {"slidesPerView": 2, "spaceBetween": 30}
+            }
+        }'
+    >
+        <div class="swiper-wrapper flex items-center">
+            <div class="swiper-slide rounded-2xl overflow-hidden p-3 md:p-8 group/tst">
+                <div class="md:py-8 w-full rounded-2xl overflow-hidden group-[.swiper-slide-active]/tst:delay-0 delay-700 group-[.swiper-slide-active]/tst:opacity-100 opacity-60 duration-300">
+                    <div class="mt-10 text-sm md:text-xl lg:text-2xl font-medium tracking-tight sm:text-center">“The client was very satisfied with the final product. IMG Global Infotech Pvt. Ltd provided a quick turnaround and high-quality services. They were able to strategize their deliverables well. The team utilized Scrum for project management and various apps for communication.”</div>
+                    
+                    <div class="mt-10 flex items-center sm:justify-center">
+                        <div class="overflow-hidden rounded-full opacity-80"><img alt="Miss. Alisha Sharma" width="48" height="48" class="h-12 w-12 object-cover text-transparent" loading="lazy" src="{{asset('public'.mix('/tailwind/img/hidden.webp'))}}" data-src="{{asset('public'.mix('/tailwind/img/testimonial-2.webp'))}}"></div>
+                        <div class="ml-4">
+                            <div class="text-sm md:text-base font-medium md:leading-6 tracking-tight">Miss. Alisha Sharma</div>
+                            <div class="mt-1 text-sm md:text-sm opacity-70">Co-Founder, YSR Infotech</div>
+                            <div class="mt-1 text-sm md:text-sm opacity-70">New Delhi, India</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- {{-- <div class="swiper-slide rounded-2xl overflow-hidden m-3 md:m-8 group/tst">
+                <div class="w-full rounded-2xl overflow-hidden group-[.swiper-slide-active]/tst:delay-0 delay-700 group-[.swiper-slide-active]/tst:opacity-100 opacity-60 duration-300">
+                    <video class="size-full rounded-2xl" src="https://into-the-program.com/uploads/sample_video03.mp4" preload="none"></video>
+                    <div class="flex items-center sm:justify-center absolute inset-5 z-[1] top-auto pb-2 md:pb-3 before:absolute before:inset-0 before:-top-3 before:bg-gradient-to-t before:from-slate-900 before:via-slate-900/50 before:backdrop-blur-2xl before:-z-[1] before:rounded-2xl">
+                        <div class="overflow-hidden rounded-full opacity-80"><img alt="Mr. Arun Garg" width="48" height="48" class="h-12 w-12 object-cover text-transparent" loading="lazy" src="{{asset('public'.mix('/tailwind/img/hidden.webp'))}}" data-src="{{asset('public'.mix('/tailwind/img/testimonial-3.webp'))}}"></div>
+                        <div class="ml-4">
+                            <div class="text-sm md:text-base font-medium md:leading-6 tracking-tight">Mr. Arun Garg</div>
+                            <div class="mt-1 text-sm md:text-sm opacity-70">Founder, CoachingSelect.com</div>
+                            <div class="mt-1 text-sm md:text-sm opacity-70">India</div>
+                        </div>
+                    </div>
+                </div>
+            </div> --}} -->
+            <div class="swiper-slide rounded-2xl overflow-hidden p-3 md:p-8 group/tst">
+                <div class="md:py-8 w-full rounded-2xl overflow-hidden group-[.swiper-slide-active]/tst:delay-0 delay-700 group-[.swiper-slide-active]/tst:opacity-100 opacity-60 duration-300">
+                    <div class="mt-10 text-sm md:text-xl lg:text-2xl font-medium tracking-tight sm:text-center">“IMG Global Infotech Pvt. Ltd helped the client improve their digital presence through the web portal. They finished the project within six months, which exceeded the client's expectations. In addition, they were customer-focused and accommodating to the client's queries.”</div>
+                    
+                    <div class="mt-10 flex items-center sm:justify-center">
+                        <div class="overflow-hidden rounded-full opacity-80"><img alt="Mr. Arun Garg" width="48" height="48" class="h-12 w-12 object-cover text-transparent" loading="lazy" src="{{asset('public'.mix('/tailwind/img/hidden.webp'))}}" data-src="{{asset('public'.mix('/tailwind/img/testimonial-3.webp'))}}"></div>
+                        <div class="ml-4">
+                            <div class="text-sm md:text-base font-medium md:leading-6 tracking-tight">Mr. Arun Garg</div>
+                            <div class="mt-1 text-sm md:text-sm opacity-70">Founder, CoachingSelect.com</div>
+                            <div class="mt-1 text-sm md:text-sm opacity-70">India</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide rounded-2xl overflow-hidden p-3 md:p-8 group/tst">
+                <div class="md:py-8 w-full rounded-2xl overflow-hidden group-[.swiper-slide-active]/tst:delay-0 delay-700 group-[.swiper-slide-active]/tst:opacity-100 opacity-60 duration-300">
+                    <div class="mt-10 text-sm md:text-xl lg:text-2xl font-medium tracking-tight sm:text-center">“IMG Global Infotech Pvt. Ltd impressed the client with the final results. The client also lauded their quality work, proper communication via scrum meetings, efficient project management, and on-time delivery. Due to the success of the collaboration, the client hired them again for other projects..”</div>
+                    
+                    <div class="mt-10 flex items-center sm:justify-center">
+                        <div class="overflow-hidden rounded-full opacity-80"><img alt="Mr. Sandeep Yadav" width="48" height="48" class="h-12 w-12 object-cover text-transparent" loading="lazy" src="{{asset('public'.mix('/tailwind/img/hidden.webp'))}}" data-src="{{asset('public'.mix('/tailwind/img/testimonial-1.webp'))}}"></div>
+                        <div class="ml-4">
+                            <div class="text-sm md:text-base font-medium md:leading-6 tracking-tight">Mr. Sandeep Yadav</div>
+                            <div class="mt-1 text-sm md:text-sm opacity-70">Owner, Coherent Lab LLP</div>
+                            <div class="mt-1 text-sm md:text-sm opacity-70">India</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide rounded-2xl overflow-hidden p-3 md:p-8 group/tst">
+                <div class="md:py-8 w-full rounded-2xl overflow-hidden group-[.swiper-slide-active]/tst:delay-0 delay-700 group-[.swiper-slide-active]/tst:opacity-100 opacity-60 duration-300">
+                    <div class="mt-10 text-sm md:text-xl lg:text-2xl font-medium tracking-tight sm:text-center">“Thanks to IMG Global Infotech's efforts, the project was completed successfully, satisfying the client's expectations. Although work was done remotely, their project management was seamless and efficient.”</div>
+                    
+                    <div class="mt-10 flex items-center sm:justify-center">
+                        <div class="overflow-hidden rounded-full opacity-80"><img alt="Mr. Anikendra Das Choudhury" width="48" height="48" class="h-12 w-12 object-cover text-transparent" loading="lazy" src="{{asset('public'.mix('/tailwind/img/hidden.webp'))}}" data-src="{{asset('public'.mix('/tailwind/img/testimonial-4.webp'))}}"></div>
+                        <div class="ml-4">
+                            <div class="text-sm md:text-base font-medium md:leading-6 tracking-tight">Mr. Anikendra Das Choudhury</div>
+                            <div class="mt-1 text-sm md:text-sm opacity-70">CEO, MyFab11</div>
+                            <div class="mt-1 text-sm md:text-sm opacity-70">Kolkata, India</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide rounded-2xl overflow-hidden p-3 md:p-8 group/tst">
+                <div class="md:py-8 w-full rounded-2xl overflow-hidden group-[.swiper-slide-active]/tst:delay-0 delay-700 group-[.swiper-slide-active]/tst:opacity-100 opacity-60 duration-300">
+                    <div class="mt-10 text-sm md:text-xl lg:text-2xl font-medium tracking-tight sm:text-center">“Impressing their partner, IMG Global Infotech Pvt. Ltd brought many customers for the client. Their professionalism and active response were all remarkable, as demonstrated in their project updates every 2-3 days.”</div>
+                    
+                    <div class="mt-10 flex items-center sm:justify-center">
+                        <div class="overflow-hidden rounded-full opacity-80"><img alt="Mr. Bharat Sharma" width="48" height="48" class="h-12 w-12 object-cover text-transparent" loading="lazy" src="{{asset('public'.mix('/tailwind/img/hidden.webp'))}}" data-src="{{asset('public'.mix('/tailwind/img/t-avatar-1.webp'))}}"></div>
+                        <div class="ml-4">
+                            <div class="text-sm md:text-base font-medium md:leading-6 tracking-tight">Mr. Bharat Sharma</div>
+                            <div class="mt-1 text-sm md:text-sm opacity-70">Administrative Head, Injection Service At Home</div>
+                            <div class="mt-1 text-sm md:text-sm opacity-70">India</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- testimonals now section end -->
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".testimonialsSwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "2",
+        spaceBetween: 10,
+        speed: 2000,
+        autoplay: {"enabled": true, "delay": 2500},
+        loop: true,
+        "effect": "coverflow",
+        "centeredSlides": true,
+        breakpoints: {
+                320: {"slidesPerView": 1.3, "spaceBetween": 0},
+                480: {"slidesPerView": 1.4, "spaceBetween": 10},
+                640: {"slidesPerView": 1.5, "spaceBetween": 30},
+                1024: {"slidesPerView": 1.8, "spaceBetween": 30},
+                1350: {"slidesPerView": 2, "spaceBetween": 30}
+            },
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        });
+</script>
 </body>
 </html>

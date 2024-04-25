@@ -2749,12 +2749,12 @@ video {
   background-image: url('/assets/img/heroback.png');
 }
 
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+.bg-\[url\(\'D\:\\fantasybox\\assets\\img\\professional-baseball-players\.jpg\'\)\] {
+  background-image: url('D:\fantasybox\assets\img\professional-baseball-players.jpg');
 }
 
-.bg-gradient-to-br {
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-r {
@@ -2763,6 +2763,34 @@ video {
 
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/public\/frontend\/img\/hero0102\.png\'\)\] {
+  background-image: url('../../public/frontend/img/hero0102.png');
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/\'\)\] {
+  background-image: url('../../');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/\.\.\'\)\] {
+  background-image: url('../../..');
+}
+
+.bg-\[url\(\'\.\/\'\)\] {
+  background-image: url('./');
+}
+
+.bg-\[url\(\'\.\/\.\.\/\'\)\] {
+  background-image: url('./../');
+}
+
+.bg-\[url\(\'\.\.\/img\/professional-baseball-players\.jpg\'\)\] {
+  background-image: url('../img/professional-baseball-players.jpg');
 }
 
 .from-gray-200 {
@@ -2777,15 +2805,15 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-gray-900 {
-  --tw-gradient-from: #111827 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(17 24 39 / 0) var(--tw-gradient-to-position);
+.from-gray-800 {
+  --tw-gradient-from: #1f2937 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(31 41 55 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-gray-950 {
-  --tw-gradient-from: #030712 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(3 7 18 / 0) var(--tw-gradient-to-position);
+.from-gray-900 {
+  --tw-gradient-from: #111827 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(17 24 39 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -2798,6 +2826,12 @@ video {
 .from-slate-900\/60 {
   --tw-gradient-from: rgb(15 23 42 / 0.6) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(15 23 42 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-theme1 {
+  --tw-gradient-from: #f3890f var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(243 137 15 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -2837,14 +2871,14 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #0284c7 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-.via-sky-950 {
-  --tw-gradient-to: rgb(8 47 73 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #082f49 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
 .via-slate-900\/80 {
   --tw-gradient-to: rgb(15 23 42 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), rgb(15 23 42 / 0.8) var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.via-theme2\/50 {
+  --tw-gradient-to: rgb(22 104 226 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(22 104 226 / 0.5) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .via-theme3 {
@@ -2862,10 +2896,6 @@ video {
 
 .to-gray-500 {
   --tw-gradient-to: #6b7280 var(--tw-gradient-to-position);
-}
-
-.to-gray-950 {
-  --tw-gradient-to: #030712 var(--tw-gradient-to-position);
 }
 
 .to-pink-200 {
@@ -4411,6 +4441,12 @@ video {
   height: 5rem;
 }
 
+.after\:size-full::after {
+  content: var(--tw-content);
+  width: 100%;
+  height: 100%;
+}
+
 .after\:h-0::after {
   content: var(--tw-content);
   height: 0px;
@@ -4516,6 +4552,22 @@ video {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(23 19 71 / var(--tw-bg-opacity));
+}
+
+.after\:bg-black::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.after\:bg-black\/50::after {
+  content: var(--tw-content);
+  background-color: rgb(0 0 0 / 0.5);
+}
+
+.after\:bg-black\/80::after {
+  content: var(--tw-content);
+  background-color: rgb(0 0 0 / 0.8);
 }
 
 .after\:bg-gradient-to-b::after {

@@ -1,6 +1,9 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
+    fontFamily: {
+      'nunito': ['"Nunito", sans-serif'],
+    },
     extend: {
       colors: {
         'theme1': '#f3890f',

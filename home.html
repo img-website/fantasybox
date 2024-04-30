@@ -16,7 +16,7 @@
     <!-- header start -->
         <section class="fixed w-full top-0 z-50">
             <div
-                class="mx-auto flex bgtransparent max-w-7xl items-center justify-between p-6 lg:px-8 bg-gradient-to-r from-theme3 from-5% via-[#2e2e31] via-11% to-theme1 to-100% rounded-b-xl">
+                class="mx-auto flex bg-transparent max-w-7xl items-center justify-between p-6 lg:px-8 bg-gradient-to-r from-theme3 from-5% via-[#2e2e31] via-11% to-theme1 to-100% rounded-b-xl">
                 <!-- <div class="bg-theme2 w-60 h-[50px] rounded-tr-2xl z-10 absolute left-0 top-0 block"></div> -->
                 <div class="flex lg:flex z-20">
                     <a href="" class="logo h-8 md:h-12">
@@ -28,10 +28,11 @@
                     <a class="text-white" href="">Home</a>
                     <a class="text-white" href="./about.html">About</a>
                     <a class="text-white" href="">Fantasy Sports</a>
-                    <a class="text-white" href="">Work</a>
+                    <a class="text-white" href="/work.html">Work</a>
                     <a class="text-white" href="">Blogs</a>
                     <a class="text-white" href="">Contact us</a>
                 </div>
+                <div class="flex gap-3">
                 <a href="https://www.fantasybox.in/contact-us"
                     class="inline-flex justify-center rounded-lg max-md:text-xs text-sm font-semibold max-md:py-2 py-3 px-4 bg-transparent text-white ring-2 ring-white group transition-all overflow-hidden">
                     <span
@@ -54,11 +55,21 @@
                             </path>
                         </svg>
                     </span>
+                    
                 </a>
+                <div class="flex lg:hidden">
+                    <label for="sideToggle" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
+                      <span class="sr-only">Open menu</span>
+                      <svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 512 512" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg"><path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path></svg>
+                    </label>
+                  </div>
+            </div>
+               
                 <!-- <a href="" class="text-theme1 font-semibold bg-white sm:px-6 sm:py-3 px-4 py-2 rounded-md">
                     Play Now
                 </a> -->
             </div>
+            
         </section>
     <!-- header ends -->
     <!-- hero section start -->
@@ -455,9 +466,9 @@
 
 <!-- Pricing section ============ -->
      <section>
-            <div>
-                <div class="relative bg-slate-50 py-6 md:py-8 lg:py-16 select-none overflow-hidden">
-                <div>
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 py-5 overflow-hidden ">
+                <div class="relative bg-gray-900 py-6 md:py-8 lg:py-16 select-none overflow-hidden rounded-2xl">
+                <!-- <div>
                     <div class="mx-auto px-4 sm:px-6 md:max-w-3xl md:px-4 lg:px-2 relative z-10">
                         <p class="max-md:text-2xl/tight max-xl:text-3xl/tight text-4xl/tight tracking-[-0.04em] text-center">
                             <span class="font-normal">Build Your Own Fantasy Sports
@@ -467,31 +478,9 @@
                         <div class="md:text-base text-sm opacity-70 mt-3 mb-lg-1 text-center">
                             Dive into the testimonials that paint a vivid picture of our journey with our potential client so far. Take a glimpse into our exceptional assistance and begin your success story with us today.
                         </div>
-                        <div class="my-5 flex gap-4 items-center justify-center">
-                            <div class="mt-5">
-                                <a href="https://www.fantasybox.in/contact-us"
-                                    class="inline-flex justify-center rounded-lg max-md:text-xs text-sm font-semibold max-md:py-2 py-3 px-4 bg-transparent text-black ring-2 ring-black group transition-all overflow-hidden">
-                                    <span
-                                        class="flex items-center gap-1 visible opacity-100 group-hover:invisible group-hover:opacity-0 transition-all group-hover:translate-y-[-15px]">
-                                        Learn More
-                                        <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg"><path d="M436.9 364.8c-14.7-14.7-50-36.8-67.4-45.1-20.2-9.7-27.6-9.5-41.9.8-11.9 8.6-19.6 16.6-33.3 13.6-13.7-2.9-40.7-23.4-66.9-49.5-26.2-26.2-46.6-53.2-49.5-66.9-2.9-13.8 5.1-21.4 13.6-33.3 10.3-14.3 10.6-21.7.8-41.9C184 125 162 89.8 147.2 75.1c-14.7-14.7-18-11.5-26.1-8.6 0 0-12 4.8-23.9 12.7-14.7 9.8-22.9 18-28.7 30.3-5.7 12.3-12.3 35.2 21.3 95 27.1 48.3 53.7 84.9 93.2 124.3l.1.1.1.1c39.5 39.5 76 66.1 124.3 93.2 59.8 33.6 82.7 27 95 21.3 12.3-5.7 20.5-13.9 30.3-28.7 7.9-11.9 12.7-23.9 12.7-23.9 2.9-8.1 6.2-11.4-8.6-26.1z"></path></svg> -->
-                                    </span>
-                                    <span
-                                        class="flex items-center gap-1 invisible opacity-0 group-hover:visible group-hover:opacity-100 text-black absolute transition-all overflow-hidden translate-y-[10px] group-hover:translate-y-[0px]">
-                                        Click Me
-                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
-                                            class="h-4 w-3" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
-                                            </path>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-                        
-                        </div>
+                       
                     </div>
-                </div>
+                </div> -->
                     <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
                         <div class="absolute inset-0 size-full pointer-events-none overflow-hidden">
                             <div
@@ -549,15 +538,39 @@
                 
                                     first:*:font-normal
                                 ">
-                                    <span class="text-4xl  font-bold mb-5">We Are </span> <span
-                                        class="text-4xl font-bold mb-5 text-theme1 ">FantasyBox</span>
+                                    <span class="text-4xl text-white font-bold mb-5">Build Your Own Fantasy Sports </span> <span
+                                        class="text-4xl font-bold mb-5 text-theme1 ">Today</span>
     
                                 </p>
-                                <p class="mt-4 text-sm md:text-base leading-7 text-slate-600">FantasyBox is a renowned and customer-centric fantasy sports app development company that brings the thrill of sports and gaming together. As ardent sports fans and tech enthusiasts, we are passionate about creating top-notch fantasy sports platforms that cater to the diverse interests of sports enthusiasts worldwide.</p>
-                                <p class="mt-4 text-sm md:text-base leading-7 text-slate-600">FantasyBox is a renowned and customer-centric fantasy sports app development company that brings the thrill of sports and gaming together. As ardent sports fans and tech enthusiasts, we are passionate about creating top-notch fantasy sports platforms that cater to the diverse interests of sports enthusiasts worldwide.</p>   
+                                <p class="mt-4 text-sm md:text-base leading-7 text-slate-300">FantasyBox is a renowned and customer-centric fantasy sports app development company that brings the thrill of sports and gaming together. As ardent sports fans and tech enthusiasts, we are passionate about creating top-notch fantasy sports platforms that cater to the diverse interests of sports enthusiasts worldwide.</p>
+                                <div class="my-5 flex gap-4     ">
+                                    <div class="mt-5">
+                                        <a href="https://www.fantasybox.in/contact-us"
+                                            class="inline-flex justify-center rounded-lg max-md:text-xs text-sm font-semibold max-md:py-2 py-3 px-4 bg-transparent text-gray-200 ring-2 ring-gray-500  group transition-all overflow-hidden">
+                                            <span
+                                                class="flex items-center gap-1 visible opacity-100 group-hover:invisible group-hover:opacity-0 transition-all group-hover:translate-y-[-15px]">
+                                                Learn More
+                                                <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg"><path d="M436.9 364.8c-14.7-14.7-50-36.8-67.4-45.1-20.2-9.7-27.6-9.5-41.9.8-11.9 8.6-19.6 16.6-33.3 13.6-13.7-2.9-40.7-23.4-66.9-49.5-26.2-26.2-46.6-53.2-49.5-66.9-2.9-13.8 5.1-21.4 13.6-33.3 10.3-14.3 10.6-21.7.8-41.9C184 125 162 89.8 147.2 75.1c-14.7-14.7-18-11.5-26.1-8.6 0 0-12 4.8-23.9 12.7-14.7 9.8-22.9 18-28.7 30.3-5.7 12.3-12.3 35.2 21.3 95 27.1 48.3 53.7 84.9 93.2 124.3l.1.1.1.1c39.5 39.5 76 66.1 124.3 93.2 59.8 33.6 82.7 27 95 21.3 12.3-5.7 20.5-13.9 30.3-28.7 7.9-11.9 12.7-23.9 12.7-23.9 2.9-8.1 6.2-11.4-8.6-26.1z"></path></svg> -->
+                                            </span>
+                                            <span
+                                                class="flex items-center gap-1 invisible opacity-0 group-hover:visible group-hover:opacity-100 text-gray-300 absolute transition-all overflow-hidden translate-y-[10px] group-hover:translate-y-[0px]">
+                                                Click Me
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                                                    class="h-4 w-3" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                
+                                </div>
                                
                             </div>
+                            
                         </div>
+                        
                         <div class="pointer-events-none absolute inset-0 shadow-[inset_0_-1px_1px_rgba(0,0,0,0.06)]"></div>
                     </div>
                 </div>

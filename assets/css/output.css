@@ -6167,6 +6167,11 @@ video {
   width: 100%;
 }
 
+.\[\&_\.contentInner\]\:px-4 .contentInner{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .\[\&_\.contentInner\]\:text-center .contentInner{
   text-align: center;
 }
@@ -6399,6 +6404,10 @@ video {
 
 .\[\&_\.tagline\]\:mt-1 .tagline{
   margin-top: 0.25rem;
+}
+
+.\[\&_\.tagline\]\:text-pretty .tagline{
+  text-wrap: pretty;
 }
 
 .\[\&_\.tagline\]\:text-xs .tagline{

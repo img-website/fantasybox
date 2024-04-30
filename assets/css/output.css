@@ -5832,6 +5832,102 @@ video {
   max-width: 48rem;
 }
 
+.\[\&_\.contentInner\]\:relative .contentInner{
+  position: relative;
+}
+
+.\[\&_\.contentInner\]\:z-\[3\] .contentInner{
+  z-index: 3;
+}
+
+.\[\&_\.contentInner\]\:w-full .contentInner{
+  width: 100%;
+}
+
+.\[\&_\.contentInner\]\:text-center .contentInner{
+  text-align: center;
+}
+
+.\[\&_\.content\]\:absolute .content{
+  position: absolute;
+}
+
+.\[\&_\.content\]\:inset-1 .content{
+  inset: 0.25rem;
+}
+
+.\[\&_\.content\]\:top-auto .content{
+  top: auto;
+}
+
+.\[\&_\.content\]\:z-\[1\] .content{
+  z-index: 1;
+}
+
+.\[\&_\.content\]\:mt-10 .content{
+  margin-top: 2.5rem;
+}
+
+.\[\&_\.content\]\:flex .content{
+  display: flex;
+}
+
+.\[\&_\.content\]\:items-center .content{
+  align-items: center;
+}
+
+.\[\&_\.content\]\:rounded-xl .content{
+  border-radius: 0.75rem;
+}
+
+.\[\&_\.content\]\:rounded-t-none .content{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.\[\&_\.content\]\:py-8 .content{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.before\:\[\&_\.content\]\:absolute .content::before{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:\[\&_\.content\]\:inset-3 .content::before{
+  content: var(--tw-content);
+  inset: 0.75rem;
+}
+
+.before\:\[\&_\.content\]\:z-\[1\] .content::before{
+  content: var(--tw-content);
+  z-index: 1;
+}
+
+.before\:\[\&_\.content\]\:rounded-xl .content::before{
+  content: var(--tw-content);
+  border-radius: 0.75rem;
+}
+
+.before\:\[\&_\.content\]\:bg-gradient-to-t .content::before{
+  content: var(--tw-content);
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.before\:\[\&_\.content\]\:backdrop-blur-xl .content::before{
+  content: var(--tw-content);
+  --tw-backdrop-blur: blur(24px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+@media (min-width: 640px){
+  .\[\&_\.content\]\:sm\:justify-center .content{
+    justify-content: center;
+  }
+}
+
 .\[\&_\.iti--separate-dial-code\:\:after\]\:has-\[input\:user-invalid\:focus\]\:h-5:has(input:user-invalid:focus) .iti--separate-dial-code::after{
   height: 1.25rem;
 }
@@ -5943,6 +6039,112 @@ video {
   --tw-scale-x: 0 !important;
   --tw-scale-y: 0 !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.\[\&_\.swiper-slide\]\:overflow-hidden .swiper-slide{
+  overflow: hidden;
+}
+
+.\[\&_\.swiper-slide\]\:rounded-2xl .swiper-slide{
+  border-radius: 1rem;
+}
+
+.\[\&_\.swiperInner\]\:relative .swiperInner{
+  position: relative;
+}
+
+.\[\&_\.swiperInner\]\:w-full .swiperInner{
+  width: 100%;
+}
+
+.\[\&_\.swiperInner\]\:overflow-hidden .swiperInner{
+  overflow: hidden;
+}
+
+.\[\&_\.swiperInner\]\:rounded-2xl .swiperInner{
+  border-radius: 1rem;
+}
+
+.\[\&_\.swiperInner\]\:bg-gray-700 .swiperInner{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.\[\&_\.swiperInner\]\:p-1 .swiperInner{
+  padding: 0.25rem;
+}
+
+.\[\&_\.tagline\]\:mt-1 .tagline{
+  margin-top: 0.25rem;
+}
+
+.\[\&_\.tagline\]\:text-xs .tagline{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.\[\&_\.tagline\]\:opacity-80 .tagline{
+  opacity: 0.8;
+}
+
+@media (min-width: 768px){
+  .\[\&_\.tagline\]\:md\:text-sm .tagline{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.\[\&_\.title\]\:text-base .title{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.\[\&_\.title\]\:font-bold .title{
+  font-weight: 700;
+}
+
+.\[\&_\.title\]\:leading-6 .title{
+  line-height: 1.5rem;
+}
+
+.\[\&_\.title\]\:tracking-tight .title{
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 768px){
+  .\[\&_\.title\]\:md\:text-lg .title{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.\[\&_img\]\:z-0 img{
+  z-index: 0;
+}
+
+.\[\&_img\]\:h-96 img{
+  height: 24rem;
+}
+
+.\[\&_img\]\:w-full img{
+  width: 100%;
+}
+
+.\[\&_img\]\:overflow-hidden img{
+  overflow: hidden;
+}
+
+.\[\&_img\]\:rounded-xl img{
+  border-radius: 0.75rem;
+}
+
+.\[\&_img\]\:object-cover img{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.\[\&_img\]\:duration-\[3000ms\] img{
+  transition-duration: 3000ms;
 }
 
 @media (min-width: 1024px){

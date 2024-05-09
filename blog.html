@@ -1,477 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fantasy Sports App Blogs | FantasyBox</title>
-  <link rel="stylesheet" href="./assets/css/output.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fantasy Sports App Blogs | FantasyBox</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
 
-<body>
-  <!-- header start -->
-  <section class="fixed w-full top-0 z-50">
-    <div
-      class="mx-auto flex bg-transparent max-w-7xl items-center justify-between p-6 lg:px-8 bg-gradient-to-r from-theme3 from-5% via-[#2e2e31] via-11% to-theme1 to-100% rounded-b-xl">
-      <div class="flex lg:flex z-20">
-        <a href="./index.html" class="logo h-8 md:h-12">
-          <img class="size-full object-contain" src="https://www.fantasybox.in/assets/img/brand/white-Final.png" alt="">
-        </a>
-      </div>
-      <div class="lg:flex hidden lg:gap-x-8 gap-y-5 mr-0 items-end">
-        <a class="text-white" href="./index.html">Home</a>
-        <a class="text-white" href="./about.html">About</a>
-        <a class="text-white" href="./work.html">Work</a>
-        <a class="text-white" href="./blog.html">Blogs</a>
-        <a class="text-white" href="./contact.html">Contact us</a>
-      </div>
-      <div class="flex gap-3">
-        <a href="https://www.fantasybox.in/contact-us"
-          class="inline-flex justify-center rounded-lg max-md:text-xs text-sm font-semibold max-md:py-2 py-3 px-4 bg-transparent text-white ring-2 ring-white group transition-all overflow-hidden">
-          <span
-            class="flex items-center gap-1 visible opacity-100 group-hover:invisible group-hover:opacity-0 transition-all group-hover:translate-y-[-15px]">
-            Play Now
-            <svg class="size-5" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-              height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M18.001 20H20V22H12C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 15.2712 20.4293 18.1755 18.001 20ZM12 10C13.1046 10 14 9.10457 14 8C14 6.89543 13.1046 6 12 6C10.8954 6 10 6.89543 10 8C10 9.10457 10.8954 10 12 10ZM8 14C9.10457 14 10 13.1046 10 12C10 10.8954 9.10457 10 8 10C6.89543 10 6 10.8954 6 12C6 13.1046 6.89543 14 8 14ZM16 14C17.1046 14 18 13.1046 18 12C18 10.8954 17.1046 10 16 10C14.8954 10 14 10.8954 14 12C14 13.1046 14.8954 14 16 14ZM12 18C13.1046 18 14 17.1046 14 16C14 14.8954 13.1046 14 12 14C10.8954 14 10 14.8954 10 16C10 17.1046 10.8954 18 12 18Z">
-              </path>
-            </svg>
-          </span>
-          <span
-            class="flex items-center gap-1 invisible opacity-0 group-hover:visible group-hover:opacity-100 text-white absolute transition-all overflow-hidden translate-y-[10px] group-hover:translate-y-[0px]">
-            Click Me
-            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="h-4 w-3"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
-              </path>
-            </svg>
-          </span>
+  <body>
+    <!-- header start -->
+    <section class="fixed w-full top-0 z-50">
+      <div
+        class="mx-auto flex bg-transparent max-w-7xl items-center justify-between p-6 lg:px-8 bg-gradient-to-r from-theme3 from-5% via-[#2e2e31] via-11% to-theme1 to-100% rounded-b-xl">
+        <div class="flex lg:flex z-20">
+          <a href="./index.html" class="logo h-8 md:h-12">
+            <img class="size-full object-contain"
+              src="https://www.fantasybox.in/assets/img/brand/white-Final.png"
+              alt>
+          </a>
+        </div>
+        <div class="lg:flex hidden lg:gap-x-8 gap-y-5 mr-0 items-end">
+          <a class="text-white" href="./index.html">Home</a>
+          <a class="text-white" href="./about.html">About</a>
+          <a class="text-white" href="./work.html">Work</a>
+          <a class="text-white" href="./blog.html">Blogs</a>
+          <a class="text-white" href="./contact.html">Contact us</a>
+        </div>
+        <div class="flex gap-3">
+          <a href="https://www.fantasybox.in/contact-us"
+            class="inline-flex justify-center rounded-lg max-md:text-xs text-sm font-semibold max-md:py-2 py-3 px-4 bg-transparent text-white ring-2 ring-white group transition-all overflow-hidden">
+            <span
+              class="flex items-center gap-1 visible opacity-100 group-hover:invisible group-hover:opacity-0 transition-all group-hover:translate-y-[-15px]">
+              Play Now
+              <svg class="size-5" stroke="currentColor" fill="currentColor"
+                stroke-width="0" viewBox="0 0 24 24"
+                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.001 20H20V22H12C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 15.2712 20.4293 18.1755 18.001 20ZM12 10C13.1046 10 14 9.10457 14 8C14 6.89543 13.1046 6 12 6C10.8954 6 10 6.89543 10 8C10 9.10457 10.8954 10 12 10ZM8 14C9.10457 14 10 13.1046 10 12C10 10.8954 9.10457 10 8 10C6.89543 10 6 10.8954 6 12C6 13.1046 6.89543 14 8 14ZM16 14C17.1046 14 18 13.1046 18 12C18 10.8954 17.1046 10 16 10C14.8954 10 14 10.8954 14 12C14 13.1046 14.8954 14 16 14ZM12 18C13.1046 18 14 17.1046 14 16C14 14.8954 13.1046 14 12 14C10.8954 14 10 14.8954 10 16C10 17.1046 10.8954 18 12 18Z">
+                </path>
+              </svg>
+            </span>
+            <span
+              class="flex items-center gap-1 invisible opacity-0 group-hover:visible group-hover:opacity-100 text-white absolute transition-all overflow-hidden translate-y-[10px] group-hover:translate-y-[0px]">
+              Click Me
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" class="h-4 w-3"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                </path>
+              </svg>
+            </span>
 
-        </a>
-        <div class="flex lg:hidden">
-          <label for="sideToggle" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
-            <span class="sr-only">Open menu</span>
-            <svg stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 512 512" height="25px" width="25px"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
-            </svg>
-          </label>
+          </a>
+          <div class="flex lg:hidden">
+            <label for="sideToggle"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
+              <span class="sr-only">Open menu</span>
+              <svg stroke="currentColor" fill="white" stroke-width="0"
+                viewBox="0 0 512 512" height="25px" width="25px"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+              </svg>
+            </label>
+          </div>
         </div>
       </div>
-    </div>
 
-  </section>
-  <!-- header ends -->
+    </section>
+    <!-- header ends -->
 
-  <!-- hero section start -->
-  <section>
-    <div id="heroColor" data-color="blue">
-      <span
-        class="hidden before:from-blue-950 before:via-blue-900 before:to-blue-800 from-blue-950 via-blue-900 to-blue-800 shadow-blue-950 text-blue-700">
-        <span class="via-blue-500 from-blue-100 to-blue-100 *:*:text-blue-400"></span>
-        <span class="bg-blue-900 hover:bg-blue-700"></span>
-      </span>
-      <div class="flex w-full relative bg-slate-50 select-none">
-        <div class="size-full relative !z-10">
-          <div
-            class="colorApply1 flex size-full items-center justify-center rounded-b-2xl relative overflow-hidden shadow-lg before:absolute before:inset-0 before:bg-cover before:bg-right before:rounded-b-2xl before:bg-gradient-to-r before:mix-blend-multiply after:absolute after:rounded-b-2xl after:inset-0 after:bg-repeat after:[background-image:url(../img/grid.svg)] shadow-orange-950 before:from-orange-950 before:via-orange-900 before:to-orange-800">
-            <span
-              class="colorApply2 absolute inset-0 bg-cover bg-right opacity-50 rounded-b-2xl bg-gradient-to-r mix-blend-multiply shadow-orange-950 from-orange-950 via-orange-900 to-orange-800"></span>
-            <img class="size-full object-cover object-center absolute inset-0 -z-[1] rounded-b-2xl aspect-[1519/812]"
-              width="1519" height="812"
-              src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?cs=tinysrgb&fit=crop&q=80&w=2048&h=720"
-              sizes="100vw" srcset="
+    <!-- hero section start -->
+    <section>
+      <div id="heroColor" data-color="blue">
+        <span
+          class="hidden before:from-blue-950 before:via-blue-900 before:to-blue-800 from-blue-950 via-blue-900 to-blue-800 shadow-blue-950 text-blue-700">
+          <span
+            class="via-blue-500 from-blue-100 to-blue-100 *:*:text-blue-400"></span>
+          <span class="bg-blue-900 hover:bg-blue-700"></span>
+        </span>
+        <div class="flex w-full relative bg-slate-50 select-none">
+          <div class="size-full relative !z-10">
+            <div
+              class="colorApply1 flex size-full items-center justify-center rounded-b-2xl relative overflow-hidden shadow-lg before:absolute before:inset-0 before:bg-cover before:bg-right before:rounded-b-2xl before:bg-gradient-to-r before:mix-blend-multiply after:absolute after:rounded-b-2xl after:inset-0 after:bg-repeat after:[background-image:url(../img/grid.svg)] shadow-orange-950 before:from-orange-950 before:via-orange-900 before:to-orange-800">
+              <span
+                class="colorApply2 absolute inset-0 bg-cover bg-right opacity-50 rounded-b-2xl bg-gradient-to-r mix-blend-multiply shadow-orange-950 from-orange-950 via-orange-900 to-orange-800"></span>
+              <img
+                class="size-full object-cover object-center absolute inset-0 -z-[1] rounded-b-2xl aspect-[1519/812]"
+                width="1519" height="812"
+                src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?cs=tinysrgb&fit=crop&q=80&w=2048&h=720"
+                sizes="100vw" srcset="
                 https://images.unsplash.com/photo-1499750310107-5fef28a66643?cs=tinysrgb&fit=crop&q=80&w=300&h=105   300w,
                 https://images.unsplash.com/photo-1499750310107-5fef28a66643?cs=tinysrgb&fit=crop&q=80&w=1100&h=387 1100w,
                 https://images.unsplash.com/photo-1499750310107-5fef28a66643?cs=tinysrgb&fit=crop&q=80&w=1519&h=534 1519w,
                 https://images.unsplash.com/photo-1499750310107-5fef28a66643?cs=tinysrgb&fit=crop&q=80&w=1800&h=633 1800w,
                 https://images.unsplash.com/photo-1499750310107-5fef28a66643?cs=tinysrgb&fit=crop&q=80&w=2048&h=720 2048w
               "
-              data-src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?cs=tinysrgb&fit=crop&q=80&w=2048&h=720"
-              alt="hero1" />
+                data-src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?cs=tinysrgb&fit=crop&q=80&w=2048&h=720"
+                alt="hero1" />
 
-            <div
-              class="relative overflow-hidden z-10 text-center 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl md:max-w-3xl sm:max-w-3xl max-w-2xl px-6 lg:px-8 w-full lg:pt-40 sm:pt-32 pt-28 pb-12">
-              <div class="max-md:text-2xl/tight max-xl:text-3xl/tight text-4xl/tight font-light text-white">
-                <span class="colorApply3 font-bold block text-balance pb-1 shadow-blue-950 via-blue-500">
-                  <div class="w-full mx-auto max-w-2xl">
-                    <label for="searchBlog" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
-                    <form class="relative searchBlogForm" novalidate="">
-                      <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none max-md:hidden">
-                        <svg class="size-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                          fill="none" viewBox="0 0 20 20">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
-                        </svg>
-                      </div>
-                      <input type="search" value="" id="searchBlog"
-                        class="block w-full p-4 md:ps-10 pe-24 text-sm text-gray-900 border border-gray-300 rounded-lg rounded-br-none bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
-                        placeholder="Search App, Web, Fantasy..." required="" />
-                      <div
-                        class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg rounded-br-none text-sm px-4 py-2">
-                        <svg class="size-4 text-gray-100 md:hidden" aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
-                        </svg>
-                        <span class="max-md:hidden">Search</span>
-                      </div>
-                    </form>
-                  </div>
-                </span>
-              </div>
-              <div class="max-md:text-sm text-base text-white pt-5 text-balance mx-auto w-10/12 empty:hidden"></div>
-              <div class="flex flex-col pt-4">
+              <div
+                class="relative overflow-hidden z-10 text-center 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl md:max-w-3xl sm:max-w-3xl max-w-2xl px-6 lg:px-8 w-full lg:pt-40 sm:pt-32 pt-28 pb-12">
                 <div
-                  class="flex flex-wrap justify-center gap-2 py-5 text-balance 2xl:max-w-5xl xl:max-w-4xl lg:max-w-3xl md:max-w-2xl sm:max-w-xl max-w-lg mx-auto *:relative *:font-semibold *:md:text-sm *:text-xs *:flex *:text-white/80 *:bg-white/10 *:border-2 *:border-white/10 *:hover:border-white/20 *:items-center *:gap-x-2 *:rounded-full *:md:pr-4 *:pr-3 *:pl-3 *:py-1 *:*:size-2 *:*:lg:size-2.5 *:*:opacity-90">
-                  <a href="javascript:;" class="group/db">
-                    <svg class="group-hover/db:opacity-80 group-hover/db:animate-spin" stroke="currentColor"
-                      fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z">
-                      </path>
-                    </svg>
-                    MOBILE APP
-                  </a>
-                  <a href="javascript:;" class="group/db">
-                    <svg class="group-hover/db:opacity-80 group-hover/db:animate-spin" stroke="currentColor"
-                      fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z">
-                      </path>
-                    </svg>
-                    ECOMMERCE
-                  </a>
-                  <a href="javascript:;" class="group/db">
-                    <svg class="group-hover/db:opacity-80 group-hover/db:animate-spin" stroke="currentColor"
-                      fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z">
-                      </path>
-                    </svg>
-                    WEB
-                  </a>
-                  <a href="javascript:;" class="group/db">
-                    <svg class="group-hover/db:opacity-80 group-hover/db:animate-spin" stroke="currentColor"
-                      fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z">
-                      </path>
-                    </svg>
-                    SOFTWARE
-                  </a>
-                  <a href="javascript:;" class="group/db">
-                    <svg class="group-hover/db:opacity-80 group-hover/db:animate-spin" stroke="currentColor"
-                      fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z">
-                      </path>
-                    </svg>
-                    FANTASY SPORTS
-                  </a>
-                  <a href="javascript:;" class="group/db">
-                    <svg class="group-hover/db:opacity-80 group-hover/db:animate-spin" stroke="currentColor"
-                      fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z">
-                      </path>
-                    </svg>
-                    ON DEMAND
-                  </a>
+                  class="max-md:text-2xl/tight max-xl:text-3xl/tight text-4xl/tight font-light text-white">
+                  <span
+                    class="colorApply3 font-bold block text-balance pb-1 shadow-blue-950 via-blue-500">
+                    <div class="w-full mx-auto max-w-2xl">
+                      <label for="searchBlog"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+                      <form class="relative searchBlogForm" novalidate>
+                        <div
+                          class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none max-md:hidden">
+                          <svg class="size-4 text-gray-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-width="2"
+                              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
+                          </svg>
+                        </div>
+                        <input type="search" value id="searchBlog"
+                          class="block w-full p-4 md:ps-10 pe-24 text-sm text-gray-900 border border-gray-300 rounded-lg rounded-br-none bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                          placeholder="Search App, Web, Fantasy..." required />
+                        <div
+                          class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg rounded-br-none text-sm px-4 py-2">
+                          <svg class="size-4 text-gray-100 md:hidden"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round"
+                              stroke-linejoin="round" stroke-width="2"
+                              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
+                          </svg>
+                          <span class="max-md:hidden">Search</span>
+                        </div>
+                      </form>
+                    </div>
+                  </span>
                 </div>
+                <div
+                  class="max-md:text-sm text-base text-white pt-5 text-balance mx-auto w-10/12 empty:hidden"></div>
+                <div class="flex flex-col pt-4">
+                  <div
+                    class="flex flex-wrap justify-center gap-2 py-5 text-balance 2xl:max-w-5xl xl:max-w-4xl lg:max-w-3xl md:max-w-2xl sm:max-w-xl max-w-lg mx-auto *:relative *:font-semibold *:md:text-sm *:text-xs *:flex *:text-white/80 *:bg-white/10 *:border-2 *:border-white/10 *:hover:border-white/20 *:items-center *:gap-x-2 *:rounded-full *:md:pr-4 *:pr-3 *:pl-3 *:py-1 *:*:size-2 *:*:lg:size-2.5 *:*:opacity-90">
+                    <a href="javascript:;" class="group/db">
+                      <svg
+                        class="group-hover/db:opacity-80 group-hover/db:animate-spin"
+                        stroke="currentColor"
+                        fill="currentColor" stroke-width="0"
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z">
+                        </path>
+                      </svg>
+                      MOBILE APP
+                    </a>
+                    <a href="javascript:;" class="group/db">
+                      <svg
+                        class="group-hover/db:opacity-80 group-hover/db:animate-spin"
+                        stroke="currentColor"
+                        fill="currentColor" stroke-width="0"
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z">
+                        </path>
+                      </svg>
+                      ECOMMERCE
+                    </a>
+                    <a href="javascript:;" class="group/db">
+                      <svg
+                        class="group-hover/db:opacity-80 group-hover/db:animate-spin"
+                        stroke="currentColor"
+                        fill="currentColor" stroke-width="0"
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z">
+                        </path>
+                      </svg>
+                      WEB
+                    </a>
+                    <a href="javascript:;" class="group/db">
+                      <svg
+                        class="group-hover/db:opacity-80 group-hover/db:animate-spin"
+                        stroke="currentColor"
+                        fill="currentColor" stroke-width="0"
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z">
+                        </path>
+                      </svg>
+                      SOFTWARE
+                    </a>
+                    <a href="javascript:;" class="group/db">
+                      <svg
+                        class="group-hover/db:opacity-80 group-hover/db:animate-spin"
+                        stroke="currentColor"
+                        fill="currentColor" stroke-width="0"
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z">
+                        </path>
+                      </svg>
+                      FANTASY SPORTS
+                    </a>
+                    <a href="javascript:;" class="group/db">
+                      <svg
+                        class="group-hover/db:opacity-80 group-hover/db:animate-spin"
+                        stroke="currentColor"
+                        fill="currentColor" stroke-width="0"
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z">
+                        </path>
+                      </svg>
+                      ON DEMAND
+                    </a>
+                  </div>
+                </div>
+                <div class="mt-10 flex gap-4 justify-center empty:hidden"></div>
               </div>
-              <div class="mt-10 flex gap-4 justify-center empty:hidden"></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- hero section end -->
+    </section>
+    <!-- hero section end -->
 
-  
-  <!-- blog swiper start -->
-  <section>
-    <div class="bg-white relative overflow-hidden py-6 md:py-8 lg:py-16 select-none">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8 z-[1] relative">
-        <p class="max-md:text-xl/tight max-xl:text-2xl/tight text-3xl/tight tracking-[-0.04em] text-black text-center">
-          <span class="font-normal block pb-3">Stay Informed Of Latest Innovations and Trends With Our
-            Blogs!</span>
-          <span class="font-bold text-theme4">
-            Explore our insightful blogs to stay abreast of the latest
-            innovations and trends. Stay informed, stay ahead.</span>
-        </p>
-        <div class="mx-auto md:mt-10 flex gap-x-8 gap-y-16 pt-10 sm:pt-8 lg:mx-0">
-          <div class="swiper blogsSwiper w-full swiper-initialized swiper-horizontal swiper-backface-hidden">
-            <div class="swiper-wrapper flex items-center pb-8 -mb-8" id="swiper-wrapper-f5ad9b8dd375ae9d"
-              aria-live="polite" style="
+    <!-- blog swiper start -->
+    <section>
+      <div
+        class="bg-white relative overflow-hidden py-6 md:py-8 lg:py-16 select-none">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 z-[1] relative">
+          <p
+            class="max-md:text-xl/tight max-xl:text-2xl/tight text-3xl/tight tracking-[-0.04em] text-black text-center">
+            <span class="font-normal block pb-3">Stay Informed Of Latest
+              Innovations and Trends With Our
+              Blogs!</span>
+            <span class="font-bold text-theme4">
+              Explore our insightful blogs to stay abreast of the latest
+              innovations and trends. Stay informed, stay ahead.</span>
+          </p>
+          <div
+            class="mx-auto md:mt-10 flex gap-x-8 gap-y-16 pt-10 sm:pt-8 lg:mx-0">
+            <div
+              class="swiper blogsSwiper w-full swiper-initialized swiper-horizontal swiper-backface-hidden">
+              <div class="swiper-wrapper flex items-center pb-8 -mb-8"
+                id="swiper-wrapper-f5ad9b8dd375ae9d"
+                aria-live="polite" style="
                 transition-duration: 0ms;
                 transform: translate3d(0px, 0px, 0px);
                 transition-delay: 0ms;
               ">
-              <div class="swiper-slide rounded-2xl group/blog p-3 swiper-slide-active" role="group" aria-label="1 / 5"
-                style="width: 433.846px; margin-right: 30px">
-                <a href="javascript:;"
-                  class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl rounded-br-none shadow-md shadow-gray-300">
-                  <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217" srcset="
+                <div
+                  class="swiper-slide rounded-2xl group/blog p-3 swiper-slide-active"
+                  role="group" aria-label="1 / 5"
+                  style="width: 433.846px; margin-right: 30px">
+                  <a href="javascript:;"
+                    class="flex max-w-xl md:max-w-full flex-col md:flex-row items-start justify-between bg-white rounded-2xl rounded-br-none">
+                    <img
+                      class="w-full rounded-2xl rounded-br-none"
+                      width="385" height="217" srcset="
                       https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024-640w.webp?id=03d810edc11bb7548702b2fc5751ce97 1x,
                       https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024-828w.webp?id=5f20284de3939feb2a29d5e0ca0ad971 2x
                     "
-                    src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024-828w.webp?id=5f20284de3939feb2a29d5e0ca0ad971"
-                    data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024-828w.webp?id=5f20284de3939feb2a29d5e0ca0ad971"
-                    alt="Develop Fantasy Cricket App With Top Features For T20 World Cup 2024" />
-                  <div class="w-full p-6">
-                    <div class="flex items-center gap-x-4 text-xs">
-                      <time datetime="2023-11-27" class="text-gray-500">Apr 29, 2024</time>
-                      <div
-                        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                        Fantasy Sports
+                      src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024-828w.webp?id=5f20284de3939feb2a29d5e0ca0ad971"
+                      data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024-828w.webp?id=5f20284de3939feb2a29d5e0ca0ad971"
+                      alt="Develop Fantasy Cricket App With Top Features For T20 World Cup 2024" />
+                    <div class="w-full p-6">
+                      <div class="flex items-center gap-x-4 text-xs">
+                        <time datetime="2023-11-27" class="text-gray-500">Apr
+                          29, 2024</time>
+                        <div
+                          class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                          Fantasy Sports
+                        </div>
                       </div>
-                    </div>
-                    <div class="group relative">
-                      <div
-                        class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
-                        Develop Fantasy Cricket App With Top Features For T20
-                        World Cup 2024
+                      <div class="group relative">
+                        <div
+                          class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
+                          Develop Fantasy Cricket App With Top Features For T20
+                          World Cup 2024
+                        </div>
+                        <p
+                          class="mt-3 lg:mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                          The popularity of cricket today urges businesses to
+                          develop fantasy cricket app development ideas. It will
+                          help them take their fantasy business to the next
+                          level.
+                        </p>
                       </div>
-                      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                        The popularity of cricket today urges businesses to
-                        develop fantasy cricket app development ideas. It will
-                        help them take their fantasy business to the next
-                        level.
-                      </p>
-                    </div>
-                    <div class="relative mt-8 flex items-center gap-x-4">
-                      <img srcset="
+                      <div
+                        class="relative mt-5 lg:mt-8 flex items-center gap-x-4">
+                        <img srcset="
                           https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-64w.webp?id=bb1fa39a4cc24f7751e83c927d5c016a  1x,
                           https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19 2x
                         "
-                        src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
-                        data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
-                        alt="Lokesh Kumar" class="h-10 w-10 rounded-full bg-gray-50" />
-                      <div class="text-sm leading-6">
-                        <p class="font-semibold text-gray-900">Written by</p>
-                        <p class="text-gray-600">Lokesh Kumar</p>
+                          src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
+                          data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
+                          alt="Lokesh Kumar"
+                          class="h-10 w-10 rounded-full bg-gray-50" />
+                        <div class="text-sm leading-6">
+                          <p class="font-semibold text-gray-900">Written by</p>
+                          <p class="text-gray-600">Lokesh Kumar</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide rounded-2xl group/blog p-3 swiper-slide-next" role="group" aria-label="2 / 5"
-                style="width: 433.846px; margin-right: 30px">
-                <a href="javascript:;"
-                  class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl rounded-br-none shadow-md shadow-gray-300">
-                  <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217" srcset="
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide rounded-2xl group/blog p-3 swiper-slide-next"
+                  role="group" aria-label="2 / 5"
+                  style="width: 433.846px; margin-right: 30px">
+                  <a href="javascript:;"
+                    class="flex max-w-xl md:max-w-full flex-col md:flex-row items-start justify-between bg-white rounded-2xl rounded-br-none">
+                    <img
+                      class="w-full rounded-2xl rounded-br-none"
+                      width="385" height="217" srcset="
                       https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Build-An-Alcohol-Delivery-App-Like-Drizly-640w.webp?id=283cf47e864768e842db4b7650ac454a 1x,
                       https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Build-An-Alcohol-Delivery-App-Like-Drizly-828w.webp?id=8841ce99c96f04de7d441ec03cc39093 2x
                     "
-                    src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Build-An-Alcohol-Delivery-App-Like-Drizly-828w.webp?id=8841ce99c96f04de7d441ec03cc39093"
-                    data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Build-An-Alcohol-Delivery-App-Like-Drizly-828w.webp?id=8841ce99c96f04de7d441ec03cc39093"
-                    alt="How To Build An Alcohol Delivery App Like Drizly?" />
-                  <div class="w-full p-6">
-                    <div class="flex items-center gap-x-4 text-xs">
-                      <time datetime="2023-11-27" class="text-gray-500">Apr 26, 2024</time>
-                      <div
-                        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                        On Demand
+                      src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Build-An-Alcohol-Delivery-App-Like-Drizly-828w.webp?id=8841ce99c96f04de7d441ec03cc39093"
+                      data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Build-An-Alcohol-Delivery-App-Like-Drizly-828w.webp?id=8841ce99c96f04de7d441ec03cc39093"
+                      alt="How To Build An Alcohol Delivery App Like Drizly?" />
+                    <div class="w-full p-6">
+                      <div class="flex items-center gap-x-4 text-xs">
+                        <time datetime="2023-11-27" class="text-gray-500">Apr
+                          26, 2024</time>
+                        <div
+                          class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                          On Demand
+                        </div>
                       </div>
-                    </div>
-                    <div class="group relative">
-                      <div
-                        class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
-                        How To Build An Alcohol Delivery App Like Drizly?
+                      <div class="group relative">
+                        <div
+                          class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
+                          How To Build An Alcohol Delivery App Like Drizly?
+                        </div>
+                        <p
+                          class="mt-3 lg:mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                          Would you like to build an alcohol delivery app like
+                          Drizly? Ordering alcohol online and having it
+                          delivered to users' doorstep has become popular in
+                          recent years.
+                        </p>
                       </div>
-                      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                        Would you like to build an alcohol delivery app like
-                        Drizly? Ordering alcohol online and having it
-                        delivered to users' doorstep has become popular in
-                        recent years.
-                      </p>
-                    </div>
-                    <div class="relative mt-8 flex items-center gap-x-4">
-                      <img srcset="
+                      <div
+                        class="relative mt-5 lg:mt-8 flex items-center gap-x-4">
+                        <img srcset="
                           https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-64w.webp?id=b8bd9543177d22b0f5e4339eb1d65a35  1x,
                           https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907 2x
                         "
-                        src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
-                        data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
-                        alt="Dipti Singhal" class="h-10 w-10 rounded-full bg-gray-50" />
-                      <div class="text-sm leading-6">
-                        <p class="font-semibold text-gray-900">Written by</p>
-                        <p class="text-gray-600">Dipti Singhal</p>
+                          src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
+                          data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
+                          alt="Dipti Singhal"
+                          class="h-10 w-10 rounded-full bg-gray-50" />
+                        <div class="text-sm leading-6">
+                          <p class="font-semibold text-gray-900">Written by</p>
+                          <p class="text-gray-600">Dipti Singhal</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide rounded-2xl group/blog p-3" role="group" aria-label="3 / 5"
-                style="width: 433.846px; margin-right: 30px">
-                <a href="javascript:;"
-                  class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl rounded-br-none shadow-md shadow-gray-300">
-                  <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217" srcset="
+                  </a>
+                </div>
+                <div class="swiper-slide rounded-2xl group/blog p-3"
+                  role="group" aria-label="3 / 5"
+                  style="width: 433.846px; margin-right: 30px">
+                  <a href="javascript:;"
+                    class="flex max-w-xl md:max-w-full flex-col md:flex-row items-start justify-between bg-white rounded-2xl rounded-br-none">
+                    <img
+                      class="w-full rounded-2xl rounded-br-none"
+                      width="385" height="217" srcset="
                       https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-Much-Does-it-Cost-to-Build-an-App-in-Saudi-Arabia-640w.webp?id=fd7b497fe8c0a71afa4429cd5a83dcbb 1x,
                       https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-Much-Does-it-Cost-to-Build-an-App-in-Saudi-Arabia-828w.webp?id=eeefabb15faa178eaca51c5ce9f15526 2x
                     "
-                    src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-Much-Does-it-Cost-to-Build-an-App-in-Saudi-Arabia-828w.webp?id=eeefabb15faa178eaca51c5ce9f15526"
-                    data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-Much-Does-it-Cost-to-Build-an-App-in-Saudi-Arabia-828w.webp?id=eeefabb15faa178eaca51c5ce9f15526"
-                    alt="How Much Does It Cost To Build An App In Saudi Arabia?" />
-                  <div class="w-full p-6">
-                    <div class="flex items-center gap-x-4 text-xs">
-                      <time datetime="2023-11-27" class="text-gray-500">Apr 24, 2024</time>
-                      <div
-                        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                        Mobile App
+                      src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-Much-Does-it-Cost-to-Build-an-App-in-Saudi-Arabia-828w.webp?id=eeefabb15faa178eaca51c5ce9f15526"
+                      data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-Much-Does-it-Cost-to-Build-an-App-in-Saudi-Arabia-828w.webp?id=eeefabb15faa178eaca51c5ce9f15526"
+                      alt="How Much Does It Cost To Build An App In Saudi Arabia?" />
+                    <div class="w-full p-6">
+                      <div class="flex items-center gap-x-4 text-xs">
+                        <time datetime="2023-11-27" class="text-gray-500">Apr
+                          24, 2024</time>
+                        <div
+                          class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                          Mobile App
+                        </div>
                       </div>
-                    </div>
-                    <div class="group relative">
-                      <div
-                        class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
-                        How Much Does It Cost To Build An App In Saudi Arabia?
+                      <div class="group relative">
+                        <div
+                          class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
+                          How Much Does It Cost To Build An App In Saudi Arabia?
+                        </div>
+                        <p
+                          class="mt-3 lg:mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                          The cost to build an app in Saudi Arabia can be
+                          influenced by your project requirements. Also, some
+                          variables affect the custom mobile app development
+                          cost in Saudi Arabia.
+                        </p>
                       </div>
-                      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                        The cost to build an app in Saudi Arabia can be
-                        influenced by your project requirements. Also, some
-                        variables affect the custom mobile app development
-                        cost in Saudi Arabia.
-                      </p>
-                    </div>
-                    <div class="relative mt-8 flex items-center gap-x-4">
-                      <img srcset="
+                      <div
+                        class="relative mt-5 lg:mt-8 flex items-center gap-x-4">
+                        <img srcset="
                           https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/mohit-mittal-64w.webp?id=255117a0d62022ff6ab02f890033498d  1x,
                           https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/mohit-mittal-128w.webp?id=1bf2551ccf3ff835f269d40d2bc29d5a 2x
                         "
-                        src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/mohit-mittal-128w.webp?id=1bf2551ccf3ff835f269d40d2bc29d5a"
-                        data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/mohit-mittal-128w.webp?id=1bf2551ccf3ff835f269d40d2bc29d5a"
-                        alt="Dipti Singhal" class="h-10 w-10 rounded-full bg-gray-50" />
-                      <div class="text-sm leading-6">
-                        <p class="font-semibold text-gray-900">Written by</p>
-                        <p class="text-gray-600">Mohit Mittal</p>
+                          src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/mohit-mittal-128w.webp?id=1bf2551ccf3ff835f269d40d2bc29d5a"
+                          data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/mohit-mittal-128w.webp?id=1bf2551ccf3ff835f269d40d2bc29d5a"
+                          alt="Dipti Singhal"
+                          class="h-10 w-10 rounded-full bg-gray-50" />
+                        <div class="text-sm leading-6">
+                          <p class="font-semibold text-gray-900">Written by</p>
+                          <p class="text-gray-600">Mohit Mittal</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide rounded-2xl group/blog p-3" role="group" aria-label="4 / 5"
-                style="width: 433.846px; margin-right: 30px">
-                <a href="javascript:;"
-                  class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl rounded-br-none shadow-md shadow-gray-300">
-                  <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217" srcset="
+                  </a>
+                </div>
+                <div class="swiper-slide rounded-2xl group/blog p-3"
+                  role="group" aria-label="4 / 5"
+                  style="width: 433.846px; margin-right: 30px">
+                  <a href="javascript:;"
+                    class="flex max-w-xl md:max-w-full flex-col md:flex-row items-start justify-between bg-white rounded-2xl rounded-br-none">
+                    <img
+                      class="w-full rounded-2xl rounded-br-none"
+                      width="385" height="217" srcset="
                       https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageThe-Ultimate-Guide-for-Creating-a-Calendar-App-2024-640w.webp?id=8774d6a1ee535e368cedde3840002bc1 1x,
                       https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageThe-Ultimate-Guide-for-Creating-a-Calendar-App-2024-828w.webp?id=5989e0722fba0ed928c05a783b9f3ecd 2x
                     "
-                    src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageThe-Ultimate-Guide-for-Creating-a-Calendar-App-2024-828w.webp?id=5989e0722fba0ed928c05a783b9f3ecd"
-                    data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageThe-Ultimate-Guide-for-Creating-a-Calendar-App-2024-828w.webp?id=5989e0722fba0ed928c05a783b9f3ecd"
-                    alt="The Ultimate Guide For Creating A Calendar App 2024" />
-                  <div class="w-full p-6">
-                    <div class="flex items-center gap-x-4 text-xs">
-                      <time datetime="2023-11-27" class="text-gray-500">Apr 21, 2024</time>
-                      <div
-                        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                        Mobile App
+                      src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageThe-Ultimate-Guide-for-Creating-a-Calendar-App-2024-828w.webp?id=5989e0722fba0ed928c05a783b9f3ecd"
+                      data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageThe-Ultimate-Guide-for-Creating-a-Calendar-App-2024-828w.webp?id=5989e0722fba0ed928c05a783b9f3ecd"
+                      alt="The Ultimate Guide For Creating A Calendar App 2024" />
+                    <div class="w-full p-6">
+                      <div class="flex items-center gap-x-4 text-xs">
+                        <time datetime="2023-11-27" class="text-gray-500">Apr
+                          21, 2024</time>
+                        <div
+                          class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                          Mobile App
+                        </div>
                       </div>
-                    </div>
-                    <div class="group relative">
-                      <div
-                        class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
-                        The Ultimate Guide For Creating A Calendar App 2024
+                      <div class="group relative">
+                        <div
+                          class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
+                          The Ultimate Guide For Creating A Calendar App 2024
+                        </div>
+                        <p
+                          class="mt-3 lg:mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                          Let's talk about how to create a calendar app! We will
+                          also discuss essential technologies and tools for
+                          developing or integrating a calendar app.
+                        </p>
                       </div>
-                      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                        Let's talk about how to create a calendar app! We will
-                        also discuss essential technologies and tools for
-                        developing or integrating a calendar app.
-                      </p>
-                    </div>
-                    <div class="relative mt-8 flex items-center gap-x-4">
-                      <img srcset="
+                      <div
+                        class="relative mt-5 lg:mt-8 flex items-center gap-x-4">
+                        <img srcset="
                           https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-64w.webp?id=b8bd9543177d22b0f5e4339eb1d65a35  1x,
                           https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907 2x
                         "
-                        src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
-                        data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
-                        alt="Dipti Singhal" class="h-10 w-10 rounded-full bg-gray-50" />
-                      <div class="text-sm leading-6">
-                        <p class="font-semibold text-gray-900">Written by</p>
-                        <p class="text-gray-600">Dipti Singhal</p>
+                          src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
+                          data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/dipti-singhal-128w.webp?id=0d42d1ab852ae165ef2cc92a7eea9907"
+                          alt="Dipti Singhal"
+                          class="h-10 w-10 rounded-full bg-gray-50" />
+                        <div class="text-sm leading-6">
+                          <p class="font-semibold text-gray-900">Written by</p>
+                          <p class="text-gray-600">Dipti Singhal</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide rounded-2xl group/blog p-3" role="group" aria-label="5 / 5"
-                style="width: 433.846px; margin-right: 30px">
-                <a href="javascript:;"
-                  class="flex max-w-xl flex-col items-start justify-between bg-white rounded-2xl rounded-br-none shadow-md shadow-gray-300">
-                  <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217" srcset="
+                  </a>
+                </div>
+                <div class="swiper-slide rounded-2xl group/blog p-3"
+                  role="group" aria-label="5 / 5"
+                  style="width: 433.846px; margin-right: 30px">
+                  <a href="javascript:;"
+                    class="flex max-w-xl md:max-w-full flex-col md:flex-row items-start justify-between bg-white rounded-2xl rounded-br-none">
+                    <img
+                      class="w-full rounded-2xl rounded-br-none"
+                      width="385" height="217" srcset="
                       https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Develop-a-Fitness-App-Like-Strava-640w.webp?id=2d1a43d1f10da824d3a1615e4a2c827c 1x,
                       https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Develop-a-Fitness-App-Like-Strava-828w.webp?id=b88815d343a1c8cdb52c1e0109ca0bf1 2x
                     "
-                    src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Develop-a-Fitness-App-Like-Strava-828w.webp?id=b88815d343a1c8cdb52c1e0109ca0bf1"
-                    data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Develop-a-Fitness-App-Like-Strava-828w.webp?id=b88815d343a1c8cdb52c1e0109ca0bf1"
-                    alt="How To Develop A Fitness App Like Strava?" />
-                  <div class="w-full p-6">
-                    <div class="flex items-center gap-x-4 text-xs">
-                      <time datetime="2023-11-27" class="text-gray-500">Apr 17, 2024</time>
-                      <div
-                        class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                        Mobile App
+                      src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Develop-a-Fitness-App-Like-Strava-828w.webp?id=b88815d343a1c8cdb52c1e0109ca0bf1"
+                      data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/thumb/blogimageHow-to-Develop-a-Fitness-App-Like-Strava-828w.webp?id=b88815d343a1c8cdb52c1e0109ca0bf1"
+                      alt="How To Develop A Fitness App Like Strava?" />
+                    <div class="w-full p-6">
+                      <div class="flex items-center gap-x-4 text-xs">
+                        <time datetime="2023-11-27" class="text-gray-500">Apr
+                          17, 2024</time>
+                        <div
+                          class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                          Mobile App
+                        </div>
                       </div>
-                    </div>
-                    <div class="group relative">
-                      <div
-                        class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
-                        How To Develop A Fitness App Like Strava?
+                      <div class="group relative">
+                        <div
+                          class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2">
+                          How To Develop A Fitness App Like Strava?
+                        </div>
+                        <p
+                          class="mt-3 lg:mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                          This blog will guide you through the Strava fitness
+                          mobile app development process, covering the essential
+                          features, development steps, and even why IMG Global
+                          Infotech should be your trusted partner in this
+                          journey.
+                        </p>
                       </div>
-                      <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                        This blog will guide you through the Strava fitness
-                        mobile app development process, covering the essential
-                        features, development steps, and even why IMG Global
-                        Infotech should be your trusted partner in this
-                        journey.
-                      </p>
-                    </div>
-                    <div class="relative mt-8 flex items-center gap-x-4">
-                      <img srcset="
+                      <div
+                        class="relative mt-5 lg:mt-8 flex items-center gap-x-4">
+                        <img srcset="
                           https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-64w.webp?id=bb1fa39a4cc24f7751e83c927d5c016a  1x,
                           https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19 2x
                         "
-                        src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
-                        data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
-                        alt="Lokesh Kumar" class="h-10 w-10 rounded-full bg-gray-50" />
-                      <div class="text-sm leading-6">
-                        <p class="font-semibold text-gray-900">Written by</p>
-                        <p class="text-gray-600">Lokesh Kumar</p>
+                          src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
+                          data-src="https://www.imgglobalinfotech.com/public/tailwind/img/blog/author/lokesh-kumar-128w.webp?id=87150d55d5988645d6e6d9ff64b5ab19"
+                          alt="Lokesh Kumar"
+                          class="h-10 w-10 rounded-full bg-gray-50" />
+                        <div class="text-sm leading-6">
+                          <p class="font-semibold text-gray-900">Written by</p>
+                          <p class="text-gray-600">Lokesh Kumar</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
+              <span class="swiper-notification" aria-live="assertive"
+                aria-atomic="true"></span>
             </div>
-            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- blog swiper end -->
+    </section>
+    <!-- blog swiper end -->
 
-  <!-- blogs start  -->
-  <section class="relative select-none py-6 md:py-8 lg:py-16 bg-white overflow-hidden">
-    <svg aria-hidden="true" class="absolute inset-0 z-0 h-full w-full pointer-events-none text-gray-200">
-      <defs>
-        <pattern id="nhgh" width="128" height="128" patternUnits="userSpaceOnUse" x="50%"
-          patternTransform="translate(0 80)">
-          <path d="M0 128V.5H128" fill="none" stroke="currentColor"></path>
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#nhgh)"></rect>
-    </svg>
-    <div
-      class="hidden z-0 sm:absolute sm:-top-10 sm:right-1/2 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl pointer-events-none"
-      aria-hidden="true">
-      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-fuchsia-900 to-lime-700 opacity-20" style="
+    <!-- blogs start  -->
+    <section
+      class="relative select-none py-6 md:py-8 lg:py-16 bg-white overflow-hidden">
+      <svg aria-hidden="true"
+        class="absolute inset-0 z-0 h-full w-full pointer-events-none text-gray-200">
+        <defs>
+          <pattern id="nhgh" width="128" height="128"
+            patternUnits="userSpaceOnUse" x="50%"
+            patternTransform="translate(0 80)">
+            <path d="M0 128V.5H128" fill="none" stroke="currentColor"></path>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#nhgh)"></rect>
+      </svg>
+      <div
+        class="hidden z-0 sm:absolute sm:-top-10 sm:right-1/2 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl pointer-events-none"
+        aria-hidden="true">
+        <div
+          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-fuchsia-900 to-lime-700 opacity-20"
+          style="
           clip-path: polygon(
             74.1% 44.1%,
             100% 61.6%,
@@ -491,428 +583,483 @@
             74.1% 44.1%
           );
         "></div>
-    </div>
-    <div
-      class="absolute z-0 -top-52 left-1/2 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu pointer-events-none"
-      aria-hidden="true">
-      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-fuchsia-900 to-lime-700 opacity-20" style="
-          clip-path: polygon(
-            74.1% 44.1%,
-            100% 61.6%,
-            97.5% 26.9%,
-            85.5% 0.1%,
-            80.7% 2%,
-            72.5% 32.5%,
-            60.2% 62.4%,
-            52.4% 68.1%,
-            47.5% 58.3%,
-            45.2% 34.5%,
-            27.5% 76.7%,
-            0.1% 64.9%,
-            17.9% 100%,
-            27.6% 76.8%,
-            76.1% 97.7%,
-            74.1% 44.1%
-          );
-        "></div>
-    </div>
-    <div class="w-full max-w-7xl mx-auto px-6 lg:px-8" id="blogList">
-      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full relative z-10 md:gap-10 gap-6 pb-8">
-        <div class="rounded-2xl group/blog relative">
-          <div
-            class="flex flex-col items-start justify-between w-full bg-white rounded-2xl rounded-br-none shadow-xl shadow-gray-300">
-            <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217"
-              src="https://www.imgglobalinfotech.com/imgadmin2/images/blog/blog_thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024.webp"
-              data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blog/blog_thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024.webp"
-              alt="Develop Fantasy Cricket App"
-              title="Develop Fantasy Cricket App with Top Features for T20 World Cup 2024" />
-            <div class="w-full p-6">
-              <div class="flex items-center gap-x-4 text-xs">
-                <time datetime="2023-11-27" class="text-gray-500">Dec 15 2023</time>
-                <a href="javascript:;"
-                  class="relative z-20 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                  Sports</a>
-              </div>
-              <div class="group">
-                <a href="javascript:;"
-                  class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2 before:absolute before:inset-0 before:z-10">
-                  Steps to Make Money Through Fantasy Sports App
-                </a>
-                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                  In the world of sports, the thrill of competition goes beyond the field.
-                  Fantasy sports have revolutionized the way fans engage with their
-                  favourite games. Fantasy sports apps have taken this
-                </p>
-              </div>
-              <div class="relative mt-8 flex items-center gap-x-4">
-                <img src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
-                  data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
-                  class="h-10 w-10 rounded-full bg-gray-50" />
-                <div class="text-sm leading-6">
-                  <p class="font-semibold text-gray-900">Written by</p>
-                  <p class="text-gray-600">Lokesh Kumar</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rounded-2xl group/blog relative">
-          <div
-            class="flex flex-col items-start justify-between w-full bg-white rounded-2xl rounded-br-none shadow-xl shadow-gray-300">
-            <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217"
-              src="https://www.fantasybox.in/uploads/blog/1698384852.jpeg"
-              data-src="https://www.fantasybox.in/uploads/blog/1698384852.jpeg" alt="Alcohol Delivery App Like Drizly"
-              title="How to Build An Alcohol Delivery App Like Drizly?" />
-            <div class="w-full p-6">
-              <div class="flex items-center gap-x-4 text-xs">
-                <time datetime="2023-11-27" class="text-gray-500"> Oct 19 2023
-                </time>
-                <a href="javascript:;"
-                  class="relative z-20 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">football</a>
-              </div>
-              <div class="group">
-                <a href="javascript:;"
-                  class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2 before:absolute before:inset-0 before:z-10">
-                  How Much Does it Cost to Develop a Fantasy Football
-                  App?
-                </a>
-                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                  FantasyBox stands out as a top choice for fantasy sports app development
-                  India due to its extensive expertise, technological prowess, and client-
-                  centric approach.
-                </p>
-              </div>
-              <div class="relative mt-8 flex items-center gap-x-4">
-                <img src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
-                  data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
-                  class="h-10 w-10 rounded-full bg-gray-50" />
-                <div class="text-sm leading-6">
-                  <p class="font-semibold text-gray-900">Written by</p>
-                  <p class="text-gray-600">Lokesh Kumar</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rounded-2xl group/blog relative">
-          <div
-            class="flex flex-col items-start justify-between w-full bg-white rounded-2xl rounded-br-none shadow-xl shadow-gray-300">
-            <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217"
-              src="https://www.fantasybox.in/uploads/blog/1696240017.webp"
-              data-src="https://www.fantasybox.in/uploads/blog/1696240017.webp"
-              alt="mobile-app-development-cost-in-saudi-arabia"
-              title="How Much Does it Cost to Build an App in Saudi Arabia?" />
-            <div class="w-full p-6">
-              <div class="flex items-center gap-x-4 text-xs">
-                <time datetime="2023-11-27" class="text-gray-500">Sep 14 2023</time>
-                <a href="javascript:;"
-                  class="relative z-20 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Cricket</a>
-              </div>
-              <div class="group">
-                <a href="javascript:;"
-                  class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2 before:absolute before:inset-0 before:z-10">
-                  Top 10 Fantasy Cricket Apps to Play Fantasy World Cup 2023
-                </a>
-                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                  Looking for the top fantasy cricket apps to play fantasy world cup 2023? You are at the right place.
-                  The fantasy app development company professionals have highlighted the top 10 fantasy cric
-                </p>
-              </div>
-              <div class="relative mt-8 flex items-center gap-x-4">
-                <img src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
-                  data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
-                  class="h-10 w-10 rounded-full bg-gray-50" />
-                <div class="text-sm leading-6">
-                  <p class="font-semibold text-gray-900">Written by</p>
-                  <p class="text-gray-600">Lokesh Kumar</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rounded-2xl group/blog relative">
-          <div
-            class="flex flex-col items-start justify-between w-full bg-white rounded-2xl rounded-br-none shadow-xl shadow-gray-300">
-            <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217"
-              src="https://www.imgglobalinfotech.com/imgadmin2/images/blog/blog_thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024.webp"
-              data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blog/blog_thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024.webp"
-              alt="Develop Fantasy Cricket App"
-              title="Develop Fantasy Cricket App with Top Features for T20 World Cup 2024" />
-            <div class="w-full p-6">
-              <div class="flex items-center gap-x-4 text-xs">
-                <time datetime="2023-11-27" class="text-gray-500">Dec 15 2023</time>
-                <a href="javascript:;"
-                  class="relative z-20 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
-                  Sports</a>
-              </div>
-              <div class="group">
-                <a href="javascript:;"
-                  class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2 before:absolute before:inset-0 before:z-10">
-                  Steps to Make Money Through Fantasy Sports App
-                </a>
-                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                  In the world of sports, the thrill of competition goes beyond the field.
-                  Fantasy sports have revolutionized the way fans engage with their
-                  favourite games. Fantasy sports apps have taken this
-                </p>
-              </div>
-              <div class="relative mt-8 flex items-center gap-x-4">
-                <img src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
-                  data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
-                  class="h-10 w-10 rounded-full bg-gray-50" />
-                <div class="text-sm leading-6">
-                  <p class="font-semibold text-gray-900">Written by</p>
-                  <p class="text-gray-600">Lokesh Kumar</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rounded-2xl group/blog relative">
-          <div
-            class="flex flex-col items-start justify-between w-full bg-white rounded-2xl rounded-br-none shadow-xl shadow-gray-300">
-            <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217"
-              src="https://www.fantasybox.in/uploads/blog/1698384852.jpeg"
-              data-src="https://www.fantasybox.in/uploads/blog/1698384852.jpeg" alt="Alcohol Delivery App Like Drizly"
-              title="How to Build An Alcohol Delivery App Like Drizly?" />
-            <div class="w-full p-6">
-              <div class="flex items-center gap-x-4 text-xs">
-                <time datetime="2023-11-27" class="text-gray-500"> Oct 19 2023
-                </time>
-                <a href="javascript:;"
-                  class="relative z-20 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">football</a>
-              </div>
-              <div class="group">
-                <a href="javascript:;"
-                  class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2 before:absolute before:inset-0 before:z-10">
-                  How Much Does it Cost to Develop a Fantasy Football
-                  App?
-                </a>
-                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                  FantasyBox stands out as a top choice for fantasy sports app development
-                  India due to its extensive expertise, technological prowess, and client-
-                  centric approach.
-                </p>
-              </div>
-              <div class="relative mt-8 flex items-center gap-x-4">
-                <img src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
-                  data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
-                  class="h-10 w-10 rounded-full bg-gray-50" />
-                <div class="text-sm leading-6">
-                  <p class="font-semibold text-gray-900">Written by</p>
-                  <p class="text-gray-600">Lokesh Kumar</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rounded-2xl group/blog relative">
-          <div
-            class="flex flex-col items-start justify-between w-full bg-white rounded-2xl rounded-br-none shadow-xl shadow-gray-300">
-            <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none" width="385" height="217"
-              src="https://www.fantasybox.in/uploads/blog/1696240017.webp"
-              data-src="https://www.fantasybox.in/uploads/blog/1696240017.webp"
-              alt="mobile-app-development-cost-in-saudi-arabia"
-              title="How Much Does it Cost to Build an App in Saudi Arabia?" />
-            <div class="w-full p-6">
-              <div class="flex items-center gap-x-4 text-xs">
-                <time datetime="2023-11-27" class="text-gray-500">Sep 14 2023</time>
-                <a href="javascript:;"
-                  class="relative z-20 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Cricket</a>
-              </div>
-              <div class="group">
-                <a href="javascript:;"
-                  class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2 before:absolute before:inset-0 before:z-10">
-                  Top 10 Fantasy Cricket Apps to Play Fantasy World Cup 2023
-                </a>
-                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
-                  Looking for the top fantasy cricket apps to play fantasy world cup 2023? You are at the right place.
-                  The fantasy app development company professionals have highlighted the top 10 fantasy cric
-                </p>
-              </div>
-              <div class="relative mt-8 flex items-center gap-x-4">
-                <img src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
-                  data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
-                  class="h-10 w-10 rounded-full bg-gray-50" />
-                <div class="text-sm leading-6">
-                  <p class="font-semibold text-gray-900">Written by</p>
-                  <p class="text-gray-600">Lokesh Kumar</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- blogs end  -->
-
-  <!-- footer section -->
-  <footer class="relative bg-black py-8 sm:py-16 select-none text-white mt-8">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 z-[1] relative">
-      <div class="w-full flex flex-wrap py-8 gap-y-10 text-sm lg:text-base justify-between">
-        <div class="w-full md:w-1/2 lg:w-1/3">
-          <div class="flex flex-col w-full px-3">
-            <div class="font-bold w-56 text-base lg:text-lg pb-4">
-              <img class="size-full" src="./assets/img/fantasy-logo.png" alt="">
-            </div>
-            <div>FantasyBox attempts to provide best services to users by developing hassle free fantasy gaming apps
-              that leaves both the customers and clients satisfied and happier.</div>
-          </div>
-          <div class="px-3 mt-4">
-            <ul class="flex gap-3 ">
-              <li>
-                <a class="opacity-80  hover:text-theme1 duration-200"
-                  href="https://www.facebook.com/fantasyboxsportsapp/">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="24px"
-                    width="24px" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
-                    </path>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="opacity-80 hover:text-theme1 duration-200" href="https://www.instagram.com/fantasyboxapp/">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="24px"
-                    width="24px" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                    </path>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="opacity-80 hover:text-theme1 duration-200" href="https://twitter.com/fantasyboxapp">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="24px"
-                    width="24px" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z">
-                    </path>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="opacity-80 hover:text-theme1 duration-200"
-                  href="https://www.linkedin.com/in/fantasy-box-417a33284/?original_referer=https%3A%2F%2Fwww.fantasybox.in%2F">
-                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="24px"
-                    width="24px" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                    </path>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 lg:w-1/4">
-          <div class="flex flex-col w-full px-3">
-            <div class="w-full font-bold text-base lg:text-lg pb-4">USEFUL LINKS</div>
-            <a href="./about.html"
-              class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
-              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
-                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-                </path>
-              </svg>
-              <span>About Us</span>
-            </a>
-            <a href="./work.html"
-              class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
-              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
-                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-                </path>
-              </svg>
-              <span>Our Portfolio</span>
-            </a>
-            <a href="./blog.html"
-              class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
-              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
-                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-                </path>
-              </svg>
-              <span>Blogs</span>
-            </a>
-            <a href="./contact.html"
-              class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
-              <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor" fill="currentColor" stroke-width="0"
-                viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
-                </path>
-              </svg>
-              <span>Contact Us</span>
-            </a>
-
-
-          </div>
-        </div>
-        <div class="w-full md:w-1/2 lg:w-1/4">
-          <div class="flex flex-col w-full px-3">
-            <div class="w-full font-bold text-base lg:text-lg pb-4">CONTACT INFORMATION</div>
-            <a href="javascript:;"
-              class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="24px"
-                width="24px" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z">
-                </path>
-              </svg>
-              <div>
-                <div>Address</div>
-                <div>Ridhi Sidhhi Tower, Vaishali Nagar, Jaipur </div>
-              </div>
-            </a>
-            <a href="./contact.html"
-              class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
-              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                stroke-linejoin="round" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                </path>
-              </svg>
-              <div>
-                <div>Need Help?</div>
-                <div>8645010203 </div>
-              </div>
-            </a>
-            <a href="javascript:;"
-              class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
-              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
-                stroke-linejoin="round" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path>
-                <path d="M3 6l9 6l9 -6"></path>
-                <path d="M15 18h6"></path>
-                <path d="M18 15l3 3l-3 3"></path>
-              </svg>
-              <div>
-                <div>Email Us At:</div>
-                <div>info@fantasybox.in </div>
-              </div>
-            </a>
-
-          </div>
-        </div>
       </div>
       <div
-        class="w-full flex flex-wrap items-center gap-x-10 gap-y-5 justify-center pt-8 lg:pt-14 lg:mt-8 border-t border-white/20 text-xs lg:text-sm">
-        <div class="w-auto opacity-80">©2019 -2024 Fantasybox . All Rights Reserved |</div>
-
+        class="absolute z-0 -top-52 left-1/2 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu pointer-events-none"
+        aria-hidden="true">
+        <div
+          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-fuchsia-900 to-lime-700 opacity-20"
+          style="
+          clip-path: polygon(
+            74.1% 44.1%,
+            100% 61.6%,
+            97.5% 26.9%,
+            85.5% 0.1%,
+            80.7% 2%,
+            72.5% 32.5%,
+            60.2% 62.4%,
+            52.4% 68.1%,
+            47.5% 58.3%,
+            45.2% 34.5%,
+            27.5% 76.7%,
+            0.1% 64.9%,
+            17.9% 100%,
+            27.6% 76.8%,
+            76.1% 97.7%,
+            74.1% 44.1%
+          );
+        "></div>
       </div>
-    </div>
-  </footer>
-  <!-- Footer Section ends -->
-</body>
+      <div class="w-full max-w-7xl mx-auto px-6 lg:px-8" id="blogList">
+        <div
+          class="grid md:grid-cols-2 grid-cols-1 w-full relative z-10 md:gap-10 gap-6 pb-8">
+          <div class="rounded-2xl group/blog relative">
+            <div
+              class="flex flex-col items-start justify-between w-full bg-white rounded-2xl rounded-br-none shadow-xl shadow-gray-300">
+              <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none"
+                width="385" height="217"
+                src="https://www.imgglobalinfotech.com/imgadmin2/images/blog/blog_thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024.webp"
+                data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blog/blog_thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024.webp"
+                alt="Develop Fantasy Cricket App"
+                title="Develop Fantasy Cricket App with Top Features for T20 World Cup 2024" />
+              <div class="w-full p-6">
+                <div class="flex items-center gap-x-4 text-xs">
+                  <time datetime="2023-11-27" class="text-gray-500">Dec 15
+                    2023</time>
+                  <a href="javascript:;"
+                    class="relative z-20 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                    Sports</a>
+                </div>
+                <div class="group">
+                  <a href="javascript:;"
+                    class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2 before:absolute before:inset-0 before:z-10">
+                    Steps to Make Money Through Fantasy Sports App
+                  </a>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                    In the world of sports, the thrill of competition goes
+                    beyond the field.
+                    Fantasy sports have revolutionized the way fans engage with
+                    their
+                    favourite games. Fantasy sports apps have taken this
+                  </p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                  <img
+                    src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
+                    data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
+                    class="h-10 w-10 rounded-full bg-gray-50" />
+                  <div class="text-sm leading-6">
+                    <p class="font-semibold text-gray-900">Written by</p>
+                    <p class="text-gray-600">Lokesh Kumar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl group/blog relative">
+            <div
+              class="flex flex-col items-start justify-between w-full bg-white rounded-2xl rounded-br-none shadow-xl shadow-gray-300">
+              <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none"
+                width="385" height="217"
+                src="https://www.fantasybox.in/uploads/blog/1698384852.jpeg"
+                data-src="https://www.fantasybox.in/uploads/blog/1698384852.jpeg"
+                alt="Alcohol Delivery App Like Drizly"
+                title="How to Build An Alcohol Delivery App Like Drizly?" />
+              <div class="w-full p-6">
+                <div class="flex items-center gap-x-4 text-xs">
+                  <time datetime="2023-11-27" class="text-gray-500"> Oct 19 2023
+                  </time>
+                  <a href="javascript:;"
+                    class="relative z-20 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">football</a>
+                </div>
+                <div class="group">
+                  <a href="javascript:;"
+                    class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2 before:absolute before:inset-0 before:z-10">
+                    How Much Does it Cost to Develop a Fantasy Football
+                    App?
+                  </a>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                    FantasyBox stands out as a top choice for fantasy sports app
+                    development
+                    India due to its extensive expertise, technological prowess,
+                    and client-
+                    centric approach.
+                  </p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                  <img
+                    src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
+                    data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
+                    class="h-10 w-10 rounded-full bg-gray-50" />
+                  <div class="text-sm leading-6">
+                    <p class="font-semibold text-gray-900">Written by</p>
+                    <p class="text-gray-600">Lokesh Kumar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl group/blog relative">
+            <div
+              class="flex flex-col items-start justify-between w-full bg-white rounded-2xl rounded-br-none shadow-xl shadow-gray-300">
+              <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none"
+                width="385" height="217"
+                src="https://www.fantasybox.in/uploads/blog/1696240017.webp"
+                data-src="https://www.fantasybox.in/uploads/blog/1696240017.webp"
+                alt="mobile-app-development-cost-in-saudi-arabia"
+                title="How Much Does it Cost to Build an App in Saudi Arabia?" />
+              <div class="w-full p-6">
+                <div class="flex items-center gap-x-4 text-xs">
+                  <time datetime="2023-11-27" class="text-gray-500">Sep 14
+                    2023</time>
+                  <a href="javascript:;"
+                    class="relative z-20 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Cricket</a>
+                </div>
+                <div class="group">
+                  <a href="javascript:;"
+                    class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2 before:absolute before:inset-0 before:z-10">
+                    Top 10 Fantasy Cricket Apps to Play Fantasy World Cup 2023
+                  </a>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                    Looking for the top fantasy cricket apps to play fantasy
+                    world cup 2023? You are at the right place.
+                    The fantasy app development company professionals have
+                    highlighted the top 10 fantasy cric
+                  </p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                  <img
+                    src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
+                    data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
+                    class="h-10 w-10 rounded-full bg-gray-50" />
+                  <div class="text-sm leading-6">
+                    <p class="font-semibold text-gray-900">Written by</p>
+                    <p class="text-gray-600">Lokesh Kumar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl group/blog relative">
+            <div
+              class="flex flex-col items-start justify-between w-full bg-white rounded-2xl rounded-br-none shadow-xl shadow-gray-300">
+              <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none"
+                width="385" height="217"
+                src="https://www.imgglobalinfotech.com/imgadmin2/images/blog/blog_thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024.webp"
+                data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blog/blog_thumb/blogimageDevelop-Fantasy-Cricket-App-with-Top-Features-for-T20-World-Cup-2024.webp"
+                alt="Develop Fantasy Cricket App"
+                title="Develop Fantasy Cricket App with Top Features for T20 World Cup 2024" />
+              <div class="w-full p-6">
+                <div class="flex items-center gap-x-4 text-xs">
+                  <time datetime="2023-11-27" class="text-gray-500">Dec 15
+                    2023</time>
+                  <a href="javascript:;"
+                    class="relative z-20 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                    Sports</a>
+                </div>
+                <div class="group">
+                  <a href="javascript:;"
+                    class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2 before:absolute before:inset-0 before:z-10">
+                    Steps to Make Money Through Fantasy Sports App
+                  </a>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                    In the world of sports, the thrill of competition goes
+                    beyond the field.
+                    Fantasy sports have revolutionized the way fans engage with
+                    their
+                    favourite games. Fantasy sports apps have taken this
+                  </p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                  <img
+                    src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
+                    data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
+                    class="h-10 w-10 rounded-full bg-gray-50" />
+                  <div class="text-sm leading-6">
+                    <p class="font-semibold text-gray-900">Written by</p>
+                    <p class="text-gray-600">Lokesh Kumar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl group/blog relative">
+            <div
+              class="flex flex-col items-start justify-between w-full bg-white rounded-2xl rounded-br-none shadow-xl shadow-gray-300">
+              <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none"
+                width="385" height="217"
+                src="https://www.fantasybox.in/uploads/blog/1698384852.jpeg"
+                data-src="https://www.fantasybox.in/uploads/blog/1698384852.jpeg"
+                alt="Alcohol Delivery App Like Drizly"
+                title="How to Build An Alcohol Delivery App Like Drizly?" />
+              <div class="w-full p-6">
+                <div class="flex items-center gap-x-4 text-xs">
+                  <time datetime="2023-11-27" class="text-gray-500"> Oct 19 2023
+                  </time>
+                  <a href="javascript:;"
+                    class="relative z-20 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">football</a>
+                </div>
+                <div class="group">
+                  <a href="javascript:;"
+                    class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2 before:absolute before:inset-0 before:z-10">
+                    How Much Does it Cost to Develop a Fantasy Football
+                    App?
+                  </a>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                    FantasyBox stands out as a top choice for fantasy sports app
+                    development
+                    India due to its extensive expertise, technological prowess,
+                    and client-
+                    centric approach.
+                  </p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                  <img
+                    src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
+                    data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
+                    class="h-10 w-10 rounded-full bg-gray-50" />
+                  <div class="text-sm leading-6">
+                    <p class="font-semibold text-gray-900">Written by</p>
+                    <p class="text-gray-600">Lokesh Kumar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl group/blog relative">
+            <div
+              class="flex flex-col items-start justify-between w-full bg-white rounded-2xl rounded-br-none shadow-xl shadow-gray-300">
+              <img class="w-full aspect-[385/221] rounded-2xl rounded-br-none"
+                width="385" height="217"
+                src="https://www.fantasybox.in/uploads/blog/1696240017.webp"
+                data-src="https://www.fantasybox.in/uploads/blog/1696240017.webp"
+                alt="mobile-app-development-cost-in-saudi-arabia"
+                title="How Much Does it Cost to Build an App in Saudi Arabia?" />
+              <div class="w-full p-6">
+                <div class="flex items-center gap-x-4 text-xs">
+                  <time datetime="2023-11-27" class="text-gray-500">Sep 14
+                    2023</time>
+                  <a href="javascript:;"
+                    class="relative z-20 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Cricket</a>
+                </div>
+                <div class="group">
+                  <a href="javascript:;"
+                    class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 line-clamp-2 before:absolute before:inset-0 before:z-10">
+                    Top 10 Fantasy Cricket Apps to Play Fantasy World Cup 2023
+                  </a>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                    Looking for the top fantasy cricket apps to play fantasy
+                    world cup 2023? You are at the right place.
+                    The fantasy app development company professionals have
+                    highlighted the top 10 fantasy cric
+                  </p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                  <img
+                    src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
+                    data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687773013.jpg"
+                    class="h-10 w-10 rounded-full bg-gray-50" />
+                  <div class="text-sm leading-6">
+                    <p class="font-semibold text-gray-900">Written by</p>
+                    <p class="text-gray-600">Lokesh Kumar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blogs end  -->
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
+    <!-- footer section -->
+    <footer class="relative bg-black py-8 sm:py-16 select-none text-white mt-8">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 z-[1] relative">
+        <div
+          class="w-full flex flex-wrap py-8 gap-y-10 text-sm lg:text-base justify-between">
+          <div class="w-full md:w-1/2 lg:w-1/3">
+            <div class="flex flex-col w-full px-3">
+              <div class="font-bold w-56 text-base lg:text-lg pb-4">
+                <img class="size-full" src="./assets/img/fantasy-logo.png" alt>
+              </div>
+              <div>FantasyBox attempts to provide best services to users by
+                developing hassle free fantasy gaming apps
+                that leaves both the customers and clients satisfied and
+                happier.</div>
+            </div>
+            <div class="px-3 mt-4">
+              <ul class="flex gap-3 ">
+                <li>
+                  <a class="opacity-80  hover:text-theme1 duration-200"
+                    href="https://www.facebook.com/fantasyboxsportsapp/">
+                    <svg stroke="currentColor" fill="currentColor"
+                      stroke-width="0" viewBox="0 0 512 512" height="24px"
+                      width="24px" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="opacity-80 hover:text-theme1 duration-200"
+                    href="https://www.instagram.com/fantasyboxapp/">
+                    <svg stroke="currentColor" fill="currentColor"
+                      stroke-width="0" viewBox="0 0 448 512" height="24px"
+                      width="24px" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="opacity-80 hover:text-theme1 duration-200"
+                    href="https://twitter.com/fantasyboxapp">
+                    <svg stroke="currentColor" fill="currentColor"
+                      stroke-width="0" viewBox="0 0 448 512" height="24px"
+                      width="24px" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="opacity-80 hover:text-theme1 duration-200"
+                    href="https://www.linkedin.com/in/fantasy-box-417a33284/?original_referer=https%3A%2F%2Fwww.fantasybox.in%2F">
+                    <svg stroke="currentColor" fill="currentColor"
+                      stroke-width="0" viewBox="0 0 448 512" height="24px"
+                      width="24px" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4">
+            <div class="flex flex-col w-full px-3">
+              <div class="w-full font-bold text-base lg:text-lg pb-4">USEFUL
+                LINKS</div>
+              <a href="./about.html"
+                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
+                  fill="currentColor" stroke-width="0"
+                  viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                  </path>
+                </svg>
+                <span>About Us</span>
+              </a>
+              <a href="./work.html"
+                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
+                  fill="currentColor" stroke-width="0"
+                  viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                  </path>
+                </svg>
+                <span>Our Portfolio</span>
+              </a>
+              <a href="./blog.html"
+                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
+                  fill="currentColor" stroke-width="0"
+                  viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                  </path>
+                </svg>
+                <span>Blogs</span>
+              </a>
+              <a href="./contact.html"
+                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                <svg class="w-2.5 h-2.5 opacity-60" stroke="currentColor"
+                  fill="currentColor" stroke-width="0"
+                  viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z">
+                  </path>
+                </svg>
+                <span>Contact Us</span>
+              </a>
+
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4">
+            <div class="flex flex-col w-full px-3">
+              <div class="w-full font-bold text-base lg:text-lg pb-4">CONTACT
+                INFORMATION</div>
+              <a href="javascript:;"
+                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                  viewBox="0 0 384 512" height="24px"
+                  width="24px" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z">
+                  </path>
+                </svg>
+                <div>
+                  <div>Address</div>
+                  <div>Ridhi Sidhhi Tower, Vaishali Nagar, Jaipur </div>
+                </div>
+              </a>
+              <a href="./contact.html"
+                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                <svg stroke="currentColor" fill="none" stroke-width="2"
+                  viewBox="0 0 24 24" stroke-linecap="round"
+                  stroke-linejoin="round" height="24px" width="24px"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+                <div>
+                  <div>Need Help?</div>
+                  <div>8645010203 </div>
+                </div>
+              </a>
+              <a href="javascript:;"
+                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                <svg stroke="currentColor" fill="none" stroke-width="2"
+                  viewBox="0 0 24 24" stroke-linecap="round"
+                  stroke-linejoin="round" height="24px" width="24px"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path>
+                  <path d="M3 6l9 6l9 -6"></path>
+                  <path d="M15 18h6"></path>
+                  <path d="M18 15l3 3l-3 3"></path>
+                </svg>
+                <div>
+                  <div>Email Us At:</div>
+                  <div>info@fantasybox.in </div>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-wrap items-center gap-x-10 gap-y-5 justify-center pt-8 lg:pt-14 lg:mt-8 border-t border-white/20 text-xs lg:text-sm">
+          <div class="w-auto opacity-80">©2019 -2024 Fantasybox . All Rights
+            Reserved |</div>
+
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section ends -->
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
   var swiper = new Swiper(".blogsSwiper", {
     slidesPerView: "2",
     spaceBetween: 10,
@@ -920,11 +1067,11 @@
     loop: false,
     "effect": "slide",
     breakpoints: {
-      320: { "slidesPerView": 1, "spaceBetween": 30 },
-      480: { "slidesPerView": 1.2, "spaceBetween": 20 },
-      640: { "slidesPerView": 2, "spaceBetween": 30 },
-      1024: { "slidesPerView": 2.6, "spaceBetween": 30 },
-      1350: { "slidesPerView": 3.3, "spaceBetween": 30 }
+      320: { "slidesPerView": 1, "spaceBetween": 10 },
+      480: { "slidesPerView": 1, "spaceBetween": 20 },
+      640: { "slidesPerView": 1, "spaceBetween": 10 },
+      1024: { "slidesPerView": 1, "spaceBetween": 10 },
+      1350: { "slidesPerView": 1, "spaceBetween": 10 }
     },
     coverflowEffect: {
       rotate: 50,
@@ -932,6 +1079,11 @@
       depth: 100,
       modifier: 1,
       slideShadows: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
     },
     pagination: {
       el: ".swiper-pagination",

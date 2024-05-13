@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FantasyBox</title>
+        <link rel="stylesheet" href="./assets/css/output.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </head>
+    <body>
+
+        <!-- header start -->
+        <section class="fixed w-full top-0 z-50">
+            <div
+                class="mx-auto flex bg-transparent max-w-7xl items-center justify-between p-6 lg:px-8 bg-gradient-to-r from-theme3 from-5% via-[#2e2e31] via-11% to-theme1 to-100% rounded-b-xl">
+                <div class="flex lg:flex z-20">
+                    <a href="./index.html" class="logo h-8 md:h-12">
+                        <img class="size-full object-contain"
+                            src="https://www.fantasybox.in/assets/img/brand/white-Final.png"
+                            alt>
+                    </a>
+                </div>
+                <div class="lg:flex hidden lg:gap-x-8 gap-y-5 mr-0 items-end">
+                    <a class="text-white" href="./index.html">Home</a>
+                    <a class="text-white" href="./about.html">About</a>
+                    <a class="text-white" href="./work.html">Work</a>
+                    <a class="text-white" href="./blog.html">Blogs</a>
+                    <a class="text-white" href="./contact.html">Contact us</a>
+                </div>
+                <div class="flex gap-3">
+                    <a href="https://www.fantasybox.in/contact-us"
+                        class="inline-flex justify-center rounded-lg max-md:text-xs text-sm font-semibold max-md:py-2 py-3 px-4 bg-transparent text-white ring-2 ring-white group transition-all overflow-hidden">
+                        <span
+                            class="flex items-center gap-1 visible opacity-100 group-hover:invisible group-hover:opacity-0 transition-all group-hover:translate-y-[-15px]">
+                            Play Now
+                            <svg class="size-5" stroke="currentColor"
+                                fill="currentColor" stroke-width="0"
+                                viewBox="0 0 24 24"
+                                height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.001 20H20V22H12C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 15.2712 20.4293 18.1755 18.001 20ZM12 10C13.1046 10 14 9.10457 14 8C14 6.89543 13.1046 6 12 6C10.8954 6 10 6.89543 10 8C10 9.10457 10.8954 10 12 10ZM8 14C9.10457 14 10 13.1046 10 12C10 10.8954 9.10457 10 8 10C6.89543 10 6 10.8954 6 12C6 13.1046 6.89543 14 8 14ZM16 14C17.1046 14 18 13.1046 18 12C18 10.8954 17.1046 10 16 10C14.8954 10 14 10.8954 14 12C14 13.1046 14.8954 14 16 14ZM12 18C13.1046 18 14 17.1046 14 16C14 14.8954 13.1046 14 12 14C10.8954 14 10 14.8954 10 16C10 17.1046 10.8954 18 12 18Z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span
+                            class="flex items-center gap-1 invisible opacity-0 group-hover:visible group-hover:opacity-100 text-white absolute transition-all overflow-hidden translate-y-[10px] group-hover:translate-y-[0px]">
+                            Click Me
+                            <svg stroke="currentColor" fill="currentColor"
+                                stroke-width="0" viewBox="0 0 448 512"
+                                class="h-4 w-3"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                                </path>
+                            </svg>
+                        </span>
+
+                    </a>
+                    <div class="flex lg:hidden">
+                        <label for="sideToggle"
+                            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5">
+                            <span class="sr-only">Open menu</span>
+                            <svg stroke="currentColor" fill="white"
+                                stroke-width="0" viewBox="0 0 512 512"
+                                height="25px" width="25px"
+                                xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path></svg>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- header ends -->
+
+        <!-- hero section start -->
+        <div class="flex w-full relative select-none font-nunito"
+            style="background-color:#330e59;">
+            <div class="w-full relative !z-10">
+                <div
+                    class="absolute inset-x-0 md:left-0 bottom-0 h-full md:w-1/2 z-0 text-white/20 pointer-events-none md:[mask-image:linear-gradient(to_left,transparent,white)] [mask-image:linear-gradient(to_bottom,transparent,white)]">
+                    <svg class="absolute inset-0 h-full w-full"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="l10" width="32" height="32"
+                                patternUnits="userSpaceOnUse" x="50%" y="100%"
+                                patternTransform="translate(0 -1)">
+                                <path d="M0 32V.5H32" fill="none"
+                                    stroke="currentColor"></path>
+                            </pattern>
+                        </defs>
+                        <rect width="100%" height="100%"
+                            fill="url(#l10)"></rect>
+                    </svg>
+                </div>
+                <div
+                    class="flex size-full items-center rounded-b-2xl relative overflow-hidden shadow-lg">
+                    <div
+                        class="flex mx-auto max-md:flex-col-reverse max-md:gap-y-10 items-center 2xl:max-w-7xl xl:max-w-6xl lg:max-w-5xl md:max-w-3xl sm:max-w-3xl max-w-2xl px-6 lg:px-8 w-full relative lg:pt-40 sm:pt-32 pt-28 pb-12 overflow-hidden z-10">
+                        <div class="md:w-1/2 grow-0 max-md:text-center">
+                            <a
+                                href="https://www.imgglobalinfotech.com/blog/category/mobile-app"
+                                style="color: #fff;"
+                                class="font-semibold uppercase text-white md:text-base text-sm pb-4">
+                                MOBILE APP
+                            </a>
+                            <div style="color: #fff;"
+                                class="font-bold text-white xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-lg text-balance !leading-tight">
+                                How To Build A Successful Real Estate Mobile App
+                                In 2024
+                            </div>
+                            <div style="color: #fff;"
+                                class="max-md:text-base text-lg text-white/80 pt-5 text-pretty w-10/12 max-md:mx-auto">Do
+                                you want to build a real estate app? With a
+                                valuation of $10.24 billion in 2022, the
+                                worldwide real estate business is predicted to
+                                grow by 2030.</div>
+                            <div class="flex gap-4 max-md:justify-center">
+                                <div
+                                    class="relative mt-8 flex items-center gap-x-2 max-sm:flex-col">
+                                    <img
+                                        src="https://www.imgglobalinfotech.com/imgadmin2/images/blogauthor/blogauthor-1687770667.jpeg"
+                                        class="h-10 w-10 rounded-full bg-gray-900 ring-1 ring-white/50 shadow-md shadow-white/10"
+                                        alt="Dipti Singhal">
+                                    <div class="text-sm leading-6">
+                                        <p style="color: #fff;"
+                                            class="font-semibold text-gray-100">Dipti
+                                            Singhal</p>
+                                        <p style="color: #fff;"
+                                            class="text-gray-200">May 10,
+                                            2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 sm:w-8/12 w-10/12 max-md:mx-auto">
+                            <div class="relative">
+                                <img
+                                    class="object-cover w-full h-auto content1-img"
+                                    width="336" height="487"
+                                    src="https://www.imgglobalinfotech.com/imgadmin2/images/blog/blogimageHow-to-Build-a-Successful-Real-Estate-Mobile-App-in-2024.webp"
+                                    alt="How To Build A Successful Real Estate Mobile App In 2024">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hero section ends -->
+
+        <!-- inner-section start -->
+        <section>
+            <div
+                class="mx-auto max-w-7xl px-6 lg:px-8 flex max-md:flex-col gap-y-8 py-10 font-nunito">
+                <div class="grow md:pr-6">
+                    <div class="w-full 
+                                md:[&>p]:!text-lg [&>p]:!text-base [&_*]:!duration-200
+        
+                                [&>p>a>strong]:!rounded-md [&>p>a>strong]:!bg-gray-100 [&>p>a>strong]:!shadow-sm [&>p>a>strong]:!shadow-gray-900/5 [&>p>a>strong]:!px-2 md:hover:[&>p>a>strong]:!bg-gray-900 md:hover:[&>p>a>strong]:!text-white
+        
+                                [&>p>strong>a]:!rounded-md [&>p>strong>a]:!bg-gray-100 [&>p>strong>a]:!shadow-sm [&>p>strong>a]:!shadow-gray-900/5 [&>p>strong>a]:!px-2 md:hover:[&>p>strong>a]:!bg-gray-900 md:hover:[&>p>strong>a]:!text-white
+        
+                                [&>h3>strong>a]:!rounded-md [&>h3>strong>a]:!bg-gray-100 [&>h3>strong>a]:!shadow-sm [&>h3>strong>a]:!shadow-gray-900/5 [&>h3>strong>a]:!px-2 md:hover:[&>h3>strong>a]:!bg-gray-900 md:hover:[&>h3>strong>a]:!text-white
+        
+                                [&>h2>strong]:!font-extrabold md:[&>h2>strong]:!text-3xl sm:[&>h2>strong]:!text-2xl [&>h2>strong]:!text-xl [&>h2>strong]:!text-theme4
+        
+                                [&>h3>strong]:!font-extrabold md:[&>h3>strong]:!text-xl sm:[&>h3>strong]:!text-lg [&>h3>strong]:!text-base [&>h3>strong]:!text-gray-800
+        
+                                [&>ul>li>h3>strong]:!font-extrabold md:[&>ul>li>h3>strong]:!text-xl sm:[&>ul>li>h3>strong]:!text-lg [&>ul>li>h3>strong]:!text-base [&>ul>li>h3>strong]:!text-gray-800
+        
+                                [&>ul>li>h3:has(strong)]:!pb-2 [&>ul>li>h3:has(strong)]:!pt-6
+        
+                                [&>p>strong>img]:!shadow-xl [&>p>strong>img]:!shadow-gray-900/20 [&>p>strong>img]:!rounded-lg [&>p>strong>img]:!ring-2 [&>p>strong>img]:!ring-gray-100 [&>p>strong>img]:!w-full [&>p>strong>img]:!h-auto
+        
+                                [&>p>em>img]:!shadow-xl [&>p>em>img]:!shadow-gray-900/20 [&>p>em>img]:!rounded-lg [&>p>em>img]:!ring-2 [&>p>em>img]:!ring-gray-100 [&>p>em>img]:!w-full [&>p>em>img]:!h-auto
+        
+                                [&>p>a>img]:!shadow-xl [&>p>a>img]:!shadow-gray-900/20 [&>p>a>img]:!rounded-lg [&>p>a>img]:!ring-2 [&>p>a>img]:!ring-gray-100 [&>p>a>img]:!w-full [&>p>a>img]:!h-auto
+        
+                                [&>p>img]:!shadow-xl [&>p>img]:!shadow-gray-900/20 [&>p>img]:!rounded-lg [&>p>img]:!ring-2 [&>p>img]:!ring-gray-100 [&>p>img]:!w-full [&>p>img]:!h-auto
+        
+                                [&>h3>a>img]:!shadow-xl [&>h3>a>img]:!shadow-gray-900/20 [&>h3>a>img]:!rounded-lg [&>h3>a>img]:!ring-2 [&>h3>a>img]:!ring-gray-100 [&>h3>a>img]:!w-full [&>h3>a>img]:!h-auto
+        
+                                [&>h2>strong>img]:!shadow-xl [&>h2>strong>img]:!shadow-gray-900/20 [&>h2>strong>img]:!rounded-lg [&>h2>strong>img]:!ring-2 [&>h2>strong>img]:!ring-gray-100 [&>h2>strong>img]:!w-full [&>h2>strong>img]:!h-auto
+        
+                                [&>h2>img]:!shadow-xl [&>h2>img]:!shadow-gray-900/20 [&>h2>img]:!rounded-lg [&>h2>img]:!ring-2 [&>h2>img]:!ring-gray-100 [&>h2>img]:!w-full [&>h2>img]:!h-auto [&>h2>strong~img]:!mt-5
+        
+                                [&>h2:has(strong~img)+p]:!pt-4
+        
+                                [&>h3:has(strong)+ul]:!pt-3
+        
+                                [&>ul]:!list-disc [&>ul]:!pl-5 
+                                
+                                [&>ul>li]:!pb-3 last:[&>ul>li]:!pb-0
+        
+                                md:[&>p>strong>a]:!text-lg [&>p>strong>a]:!text-base [&>p>strong>a]:!w-auto [&>p>strong>a]:!h-auto [&>p>strong>a]:!rounded-br-none [&>p>strong>a]:!inline-flex [&>p>strong>a]:!font-nunito
+        
+                                [&_.table-responsive]:overflow-x-auto [&_.table-responsive]:w-full
+        
+                                [&_table]:table-auto [&_table]:border-separate [&_table]:border-spacing-2 [&_table]:min-w-full 
+        
+                                [&_thead]:md:text-sm [&_thead]:text-xs [&_thead]:uppercase
+        
+                                [&_thead>tr>th]:text-gray-700 [&_thead>tr>th]:md:px-5 [&_thead>tr>th]:px-3 [&_thead>tr>th]:md:font-bold [&_thead>tr>th]:font-normal [&_thead>tr>th]:text-left first:[&_thead>tr>th]:rounded-l-xl last:[&_thead>tr>th]:rounded-r-xl [&_thead>tr>th]:text-nowrap
+        
+                                [&_tbody]:md:text-base [&_tbody]:text-sm
+        
+                                [&_tbody>tr>td]:bg-gray-100 [&_tbody>tr>td]:cursor-default [&_tbody>tr>td]:border-2 [&_tbody>tr>td]:border-black/5 [&_tbody>tr>td]:text-black [&_tbody>tr>td]:md:px-5 [&_tbody>tr>td]:px-3 [&_tbody>tr>td]:md:py-3 [&_tbody>tr>td]:py-2 [&_tbody>tr>td]:text-left [&_tbody>tr>td]:rounded-xl
+                    
+                        ">
+                        <p>Do you want to build a real estate app? With a
+                            valuation of $10.24 billion in 2022, the worldwide
+                            real estate business is predicted to grow by 2030.
+                            When people seek for a property, it's no surprise
+                            that they select online ease over more traditional
+                            offline means. &nbsp;<br>
+                            &nbsp; &nbsp;&nbsp;</p>
+
+                        <p>Almost half of all homebuyers now begin their search
+                            online. Among the younger generation of boomers, 68%
+                            used their smartphones to locate a home. This shows
+                            the demand for <strong>real estate app
+                                development</strong> will rise in the coming
+                            future. &nbsp;&nbsp;</p>
+
+                        <p><br>
+                            It is only reasonable to tailor your app to the
+                            habits of millennials. Since this generation
+                            accounts for the lion's share of homebuyers. So, if
+                            your goal is to invest in <strong>mobile app
+                                development for real estate</strong>, read this
+                            blog that contributes to your app's success. It will
+                            cover the ins and outs to build a real estate
+                            app.</p>
+
+                        <p>&nbsp;</p>
+
+                        <p><a
+                                href="https://www.imgglobalinfotech.com/request-a-quote.php"
+                                target="_blank"><img alt
+                                    src="https://www.imgglobalinfotech.com/public/externals/img/real-estate-app-cta1.webp"></a></p>
+
+                        <h2><br>
+                            <strong>What Is A Real Estate
+                                App?&nbsp;</strong></h2>
+
+                        <p><br>
+                            Real estate mobile apps usually focus on a certain
+                            group of people. In the end, clients and real estate
+                            agents possess distinct wants. A good example of
+                            this is the curiosity of owners and brokers in
+                            renting out their properties. &nbsp;</p>
+
+                        <p><br>
+                            Also, the search for rooms and apartments by renters
+                            and tenants. There are also brokers and buyers who
+                            expertise in real estate ownership. So, if you
+                            intend to develop a <strong>real estate app like
+                                Magic Bricks</strong> or any other housing app,
+                            speak with professionals.&nbsp;</p>
+
+                        <p>&nbsp;</p>
+
+                        <p><img alt
+                                src="https://imgglobalinfotech.com/imgadmin2/images/blogimage/real-estate-market.webp	"
+                                style="height:593px; width:800px"></p>
+
+                        <p>&nbsp;</p>
+
+                        <ul>
+                            <li>It was estimated that real estate companies
+                                around the world made $9.5 billion in 2021, and
+                                that number is expected to rise by 4.8% per year
+                                until 2030. &nbsp; &nbsp;&nbsp;</li>
+                            <li>It was estimated that the global real estate
+                                market size would be worth $10.24 billion in
+                                2022. It is projected to grow at a rate of 12.8%
+                                per year from 2023 to 2030. &nbsp;&nbsp;</li>
+                            <li>When it came to US real estate websites in 2023,
+                                Zillow was by far the most popular. &nbsp;</li>
+                            <li>About 57 million people visited Zillow every
+                                month, which was a lot more than any other
+                                website in the list. &nbsp; &nbsp; &nbsp;</li>
+                            <li>With 211 million monthly visits, Craigslist.org
+                                came in second, and leboncoin.fr came in third,
+                                with 189.6 million average views. &nbsp;
+                                &nbsp;</li>
+                            <li>The age of tenants under 35 is 34.4%.
+                                &nbsp;&nbsp;</li>
+                            <li>59.5% of homeowners are married couples,
+                                compared to 38.1 percent of renters who live
+                                alone. &nbsp; &nbsp;</li>
+                            <li>3.9% of people in the top 25% net wealth
+                                percentile rent. &nbsp;&nbsp;</li>
+                        </ul>
+
+                        <p>&nbsp;</p>
+
+                        <h2><strong>Key Features To Build A Real Estate
+                                App&nbsp;</strong></h2>
+
+                        <p>&nbsp;</p>
+
+                        <p>Before choosing what features should be offered in a
+                            real estate app, it's critical to think about who
+                            the app is meant for. Additionally, you should also
+                            assess how well it works. Having said that, let's
+                            discuss a few features to <strong>build a real
+                                estate app</strong>. &nbsp;</p>
+
+                        <p>&nbsp;</p>
+
+                        <h3><strong>User Sign-in&nbsp;</strong></h3>
+
+                        <p>To better serve its users, the app must let users
+                            build an account which outlines their needs and
+                            links them with the listing owner. Users must be
+                            ready to sign up and log in before they may utilize
+                            your app to find and contact suitable property
+                            listings. &nbsp; &nbsp;</p>
+
+                        <p>&nbsp;</p>
+
+                        <p>Two different profiles are required. There is one for
+                            people who want to buy a house and another for real
+                            estate brokers or owners. It would make things
+                            faster if people utilized their email or social
+                            media accounts to log in.&nbsp;<br>
+                            &nbsp;&nbsp;</p>
+
+                        <h3><strong>Options For Filter And Search</strong></h3>
+
+                        <p>App users should be able to sort search results by
+                            location, privacy, and other things! If someone is
+                            looking for a house on the app, they could quickly
+                            put the right keywords and see properties that match
+                            their search in the suggestions. So, when you build
+                            a real estate app, consider adding a search feature
+                            in it.&nbsp;</p>
+
+                        <p>&nbsp;</p>
+
+                        <h3><strong>Properties On The Market</strong></h3>
+
+                        <p>Let the property owners or agents make a full listing
+                            on the app that includes where it is, how big it is,
+                            and what amenities are close. The listing is a great
+                            way for the owners to give serious buyers a lot of
+                            information about the house. Additionally, if you
+                            want to build an android app with this feature
+                            integrated, then take help from an <strong>android
+                                app development company</strong>.&nbsp;</p>
+
+                        <p><br>
+                            &nbsp;</p>
+
+                        <h3><strong>Navigation Using Maps</strong></h3>
+
+                        <p>The navigation tool keeps clients from getting
+                            lost.You can gather property details by drawing a
+                            circle around an interesting location on the map.
+                            Furthermore, this will help users find out if there
+                            are stores, schools, or hospitals close. Also,
+                            integrate a GPS feature when you build a real estate
+                            app. It could also have extra information like the
+                            number of people living in the area and the crime
+                            rate.</p>
+
+                        <p>&nbsp; &nbsp;</p>
+
+                        <h3><strong>Categories and Filters</strong></h3>
+
+                        <p>Category and filter searches are another choice that
+                            might help make the search process easier to handle.
+                            Before you build a real estate app, you must first
+                            ascertain which features your customers will want
+                            the most. You can also take assistance from the
+                            <strong>top mobile app development
+                                companies</strong> to add those features in the
+                            app's various groups and filters.&nbsp;</p>
+
+                        <p>&nbsp;</p>
+
+                        <h3><strong>Push Notifications</strong></h3>
+
+                        <p>Push notifications for marketing have a great impact
+                            on business growth. This trait is necessary for
+                            long-term success in real estate. Push alerts help
+                            you keep people coming back. It does a good job of
+                            advertising your services. You can send news about
+                            your business to prospects via push alerts. Users
+                            can be told when costs change or when a new property
+                            shows on the market. &nbsp;</p>
+
+                        <p>&nbsp;</p>
+
+                        <h3><strong>Call and Direct Messaging</strong></h3>
+
+                        <p>Making sure people can get to the detailed property
+                            information is one part. You need to move people to
+                            the next stage of the sales funnel by giving them
+                            the option to call or send direct messages. You can
+                            also add in-app call or messaging app features with
+                            AI-powered technology for better results.</p>
+
+                        <h3><br>
+                            &nbsp;&nbsp;<br>
+                            <strong>Virtual Tour&nbsp;</strong></h3>
+
+                        <p>People who want to buy a home are more interested in
+                            ads that include video tours. It gives a full
+                            picture and style of the property, giving the right
+                            impression and information about the property, which
+                            descriptions don't always manage to do. When you
+                            build a real estate app, add VR technology for
+                            better user satisfaction. &nbsp; &nbsp;&nbsp;<br>
+                            &nbsp;</p>
+
+                        <h2>&nbsp;</h2>
+
+                        <h2><strong>How To Build A Real Estate
+                                App?</strong></h2>
+
+                        <p><br>
+                            Now that you know the features of real estate apps,
+                            it is time to understand how real estate apps are
+                            made. So let’s have a look at the steps to build a
+                            real estate app: &nbsp;</p>
+
+                        <p>&nbsp;</p>
+
+                        <p><img alt
+                                src="https://imgglobalinfotech.com/imgadmin2/images/blogimage/how-to-a-real-estate-app.webp	"
+                                style="height:445px; width:800px"></p>
+
+                        <h3><br>
+                            <strong>Validate Your App Idea</strong></h3>
+
+                        <p>&nbsp;<br>
+                            The first step to build a real estate app is to
+                            validate it with <strong>custom real estate app
+                                development</strong> experts. Think carefully
+                            about the features and functionality you need in
+                            your app. In order to build a real estate app, you
+                            must first determine the kinds of properties that
+                            users may search.&nbsp;</p>
+
+                        <p><br>
+                            Also, the features that allow users to store and
+                            share properties. Think like a consumer and make
+                            sure your app has features that will benefit them.
+                            Determining the scope of your project in advance
+                            will help you avoid adding things that aren't
+                            necessary. &nbsp; &nbsp;&nbsp;</p>
+
+                        <h3><br>
+                            <strong>Do Market Research</strong></h3>
+
+                        <p><br>
+                            The second step to build a real estate app is to
+                            study the market and become familiar with your
+                            niche, the competition, and the latest trends. Think
+                            about the people that could use your app, what they
+                            want, and how your competitors are
+                            operating.&nbsp;</p>
+
+                        <p><br>
+                            Do study to see where the competition has gaps and
+                            how your app might provide it. You must choose your
+                            app's style, functionality, and pricing wisely to
+                            stand out and attract the audience you are
+                            targeting. You can accomplish that with
+                            this.&nbsp;</p>
+
+                        <h3><br>
+                            <strong>Create a Wireframe Design</strong></h3>
+
+                        <p><br>
+                            The third stage to build a real estate is creating
+                            wireframes and designs. The real estate app
+                            development companies are a need if you want a
+                            visual representation of your app's functionality
+                            and UI. Picture yourself creating a house plan
+                            before breaking ground. &nbsp;</p>
+
+                        <p><br>
+                            You must make an app’s design aesthetically
+                            pleasing, and responsive to your target audience
+                            demands. It must be high-fidelity models by taking
+                            help from designers. They will make clickable
+                            prototypes, or draw out basic ideas. Maintaining a
+                            unified and understandable design for your app is
+                            crucial.&nbsp;<br>
+                            &nbsp; &nbsp;</p>
+
+                        <h3>&nbsp;&nbsp;<br>
+                            <strong>Backend Development&nbsp;</strong></h3>
+
+                        <p>&nbsp;&nbsp;<br>
+                            Your app's backend is in charge of all the data and
+                            information it requires to function correctly and
+                            power it. In order for your app to get data from
+                            external sources, such real estate listings, the
+                            mobile app development company in UK will create the
+                            database, API, and server in this phase.</p>
+
+                        <p><br>
+                            You'll need a solid grasp of databases, servers, and
+                            other backend technologies in addition to
+                            programming abilities. To make sure your app can do
+                            what users need it to, you can build a real estate
+                            app with a strong backend.&nbsp;</p>
+
+                        <h3><br>
+                            <strong>Frontend Development</strong><br>
+                            &nbsp;</h3>
+
+                        <p>Creating eye-catching and exciting features that
+                            users may engage with is the fifth step to build a
+                            real estate app. Colors, typefaces, and layout will
+                            all be part of the user interface layout. What this
+                            means is that you'll have to think about how users
+                            will utilize the app and its features. &nbsp;</p>
+
+                        <p><br>
+                            Your app must work well on multiple platforms and
+                            devices. For example, tablets and smartphones. It is
+                            vital to know that your app usability should be
+                            top-notch across all devices and platforms. You can
+                            also go for <strong>white label real estate app
+                                development</strong> for minimizing your
+                            budget.&nbsp;</p>
+
+                        <h3><br>
+                            <strong>Testing Your App&nbsp;</strong></h3>
+
+                        <p>&nbsp;&nbsp;<br>
+                            The next stage of the <strong>real estate app
+                                development process</strong> is to test it and
+                            make adjustments based on user feedback. As part of
+                            this process, real users will analyze the app and
+                            offer feedback. In addition to enhancing the app's
+                            usability and functionality, this feedback will aid
+                            in identifying any problems or bugs.&nbsp;</p>
+
+                        <p><br>
+                            You can improve your app's ability to satisfy users'
+                            requirements and expectations by actively seeking
+                            out their input and making necessary adjustments.
+                            This is a must-do if you want your software to be
+                            user-friendly and satisfying.</p>
+
+                        <h3><br>
+                            <strong>Release Your App&nbsp;</strong></h3>
+
+                        <p><br>
+                            Now comes the final stage of publishing on the app
+                            store. After releasing your app to the public, it is
+                            vital to check on reviews, ratings, and feedback
+                            from users. It helps in knowing what they think and
+                            where you can make modifications. Take user comments
+                            on board and act upon their suggestions. Your app
+                            will stay competitive in the market, if you update
+                            it regularly, and boost its performance. &nbsp;</p>
+
+                        <p><br>
+                            &nbsp;</p>
+
+                        <p><a
+                                href="javascript:;"
+                                target="_blank"><img alt
+                                    src="https://www.imgglobalinfotech.com/public/externals/img/real-estate-app-cta2.webp"></a></p>
+
+                        <p>&nbsp;</p>
+
+                        <h2><strong>Top 5 Real Estate Apps Of
+                                2024&nbsp;</strong></h2>
+
+                        <p><br>
+                            The best choices are chosen based on features, cost,
+                            and real estate broker ratings. These real estate
+                            apps will help you grow your business when you build
+                            a real estate app.</p>
+
+                        <h2><br>
+                            <strong>How Much Does It Cost To Build A Real Estate
+                                App?&nbsp;</strong></h2>
+
+                        <p><br>
+                            The cost to build a real estate app fluctuates on
+                            the basis of multiple factors. Its intricacy, the
+                            number and location of your team of developers, and
+                            any other performance-enhancing resources are the
+                            most crucial ones. These all may influence the
+                            <strong>real estate app development cost</strong>.
+                            &nbsp;&nbsp;</p>
+
+                        <p>&nbsp; &nbsp; &nbsp;&nbsp;</p>
+
+                        <p>It may be between $10,000 and $30,000 if your
+                            property search app has all the functionality and
+                            technical details. Get a fast, rough prototype made
+                            and test it with customers before investing funds on
+                            <strong>real estate app development</strong>. This
+                            will allow you to determine which app users prefer
+                            to use. Once you develop the real estate app, make
+                            sure you have a monetization plan in your hand.
+                            &nbsp;&nbsp;</p>
+
+                        <h3><br>
+                            <strong>Final Thoughts! &nbsp;</strong></h3>
+
+                        <p><br>
+                            The real estate tech business is very profitable, so
+                            if you want to build a real estate app, do it right
+                            away. If you're thinking to build a real estate app,
+                            take into account various revenue streams, such as
+                            sponsored content and paid memberships. &nbsp;</p>
+
+                        <p><br>
+                            However, an MVP is a basic version of the app that
+                            you should make to see if people want your service.
+                            All you need to do is hire a real estate app
+                            development company like <strong>IMG Global
+                                Infotech</strong> and send us your project
+                            requirements if you have an idea for an app. We will
+                            help you figure out how much your item costs. &nbsp;
+                            &nbsp;&nbsp;<br>
+                            &nbsp;</p>
+                    </div>
+
+                    <div class="w-full pt-8 has-[a]:block hidden">
+                        <div
+                            class="w-full md:text-lg text-base font-extrabold text-gray-800 pb-4">#HashTags</div>
+                        <div class="flex flex-col">
+                            <div
+                                class="flex flex-wrap gap-2 text-balance 2xl:max-w-5xl xl:max-w-4xl lg:max-w-3xl md:max-w-2xl sm:max-w-xl max-w-lg">
+                                <a
+                                    href="https://www.imgglobalinfotech.com/blog/tag/mobile-app-development-company"
+                                    class="group/db relative font-semibold md:text-sm text-xs flex backdrop-blur-xl text-theme4/80 bg-theme4/10 border-2 border-theme4/10 hover:border-theme4/20 items-center gap-x-2 rounded-full md:pr-4 pr-3 pl-3 py-1">
+                                    <svg
+                                        class="size-2 lg:size-2.5 opacity-90 group-hover/db:opacity-80 group-hover/db:animate-spin"
+                                        stroke="currentColor"
+                                        fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 448 512"
+                                        xmlns="http://www.w3.org/2000/svg"><path
+                                            d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                                    mobile app development company
+                                </a>
+                                <a
+                                    href="https://www.imgglobalinfotech.com/blog/tag/mobile-app-development-services"
+                                    class="group/db relative font-semibold md:text-sm text-xs flex backdrop-blur-xl text-theme4/80 bg-theme4/10 border-2 border-theme4/10 hover:border-theme4/20 items-center gap-x-2 rounded-full md:pr-4 pr-3 pl-3 py-1">
+                                    <svg
+                                        class="size-2 lg:size-2.5 opacity-90 group-hover/db:opacity-80 group-hover/db:animate-spin"
+                                        stroke="currentColor"
+                                        fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 448 512"
+                                        xmlns="http://www.w3.org/2000/svg"><path
+                                            d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                                    mobile app development services
+                                </a>
+                                <a
+                                    href="https://www.imgglobalinfotech.com/blog/tag/hire-mobile-app-developer"
+                                    class="group/db relative font-semibold md:text-sm text-xs flex backdrop-blur-xl text-theme4/80 bg-theme4/10 border-2 border-theme4/10 hover:border-theme4/20 items-center gap-x-2 rounded-full md:pr-4 pr-3 pl-3 py-1">
+                                    <svg
+                                        class="size-2 lg:size-2.5 opacity-90 group-hover/db:opacity-80 group-hover/db:animate-spin"
+                                        stroke="currentColor"
+                                        fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 448 512"
+                                        xmlns="http://www.w3.org/2000/svg"><path
+                                            d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                                    hire mobile app developer
+                                </a>
+                                <a
+                                    href="https://www.imgglobalinfotech.com/blog/tag/mobile-app-development"
+                                    class="group/db relative font-semibold md:text-sm text-xs flex backdrop-blur-xl text-theme4/80 bg-theme4/10 border-2 border-theme4/10 hover:border-theme4/20 items-center gap-x-2 rounded-full md:pr-4 pr-3 pl-3 py-1">
+                                    <svg
+                                        class="size-2 lg:size-2.5 opacity-90 group-hover/db:opacity-80 group-hover/db:animate-spin"
+                                        stroke="currentColor"
+                                        fill="currentColor" stroke-width="0"
+                                        viewBox="0 0 448 512"
+                                        xmlns="http://www.w3.org/2000/svg"><path
+                                            d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z"></path></svg>
+                                    mobile app development
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full pt-8">
+                        <div
+                            class="w-full md:text-lg text-base font-extrabold text-gray-800 pb-4">Share
+                            on</div>
+                        <div class="w-full flex flex-wrap items-center gap-4">
+                            <a title="Facebook"
+                                onclick="sharePost('facebook','how-to-build-successful-real-estate-mobile-app');"
+                                class="inline-flex group/social justify-center items-center bg-gray-100 text-center relative overflow-hidden rounded-xl lg:rounded-2xl shadow-xl shadow-white/20 border-[3px] border-gray-200 duration-300 w-10 md:w-14 h-10 md:h-14 text-base before:bg-blue-900 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-blue-900 p-2 lg:p-3 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                                <svg
+                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                    stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 320 512"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                            </a>
+                            <a title="Twitter"
+                                onclick="sharePost('twitter','how-to-build-successful-real-estate-mobile-app');"
+                                class="inline-flex group/social justify-center items-center bg-gray-100 text-center relative overflow-hidden rounded-xl lg:rounded-2xl shadow-xl shadow-white/20 border-[3px] border-gray-200 duration-300 w-10 md:w-14 h-10 md:h-14 text-base before:bg-cyan-400 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-cyan-400 p-2 lg:p-3 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                                <svg
+                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                    stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                            </a>
+                            <a title="Linkedin"
+                                onclick="sharePost('linkedin','how-to-build-successful-real-estate-mobile-app');"
+                                class="inline-flex group/social justify-center items-center bg-gray-100 text-center relative overflow-hidden rounded-xl lg:rounded-2xl shadow-xl shadow-white/20 border-[3px] border-gray-200 duration-300 w-10 md:w-14 h-10 md:h-14 text-base before:bg-sky-700 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-sky-700 p-2 lg:p-3 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                                <svg
+                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                    stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-96 w-full md:pl-4 shrink-0">
+                    <div
+                        class="w-full sticky top-28 rounded-xl shadow-xl shadow-gray-900/10 bg-gray-100 p-5">
+                        <div
+                            class="w-full md:text-lg text-base font-extrabold text-gray-800 pb-4">Recent
+                            Blog</div>
+                        <ul
+                            class="md:text-base text-sm text-gray-600 hover:*:text-gray-900 *:duration-300 *:py-2 *:border-b *:border-gay-200 last:*:border-b-0 font-semibold flex flex-col">
+                            <li><a
+                                    href="https://www.imgglobalinfotech.com/blog/how-to-hire-a-dedicated-developer-team"
+                                    class="flex gap-2"><img
+                                        class="w-20 aspect-[385/221] rounded-lg object-cover rounded-br-none"
+                                        width="385" height="217"
+                                        src="https://www.imgglobalinfotech.com/imgadmin2/images/blog//blog_thumb2/blogimageHow-to-Hire-a-Dedicated-Development-Team-A-Complete-Guide-for-2024.webp"
+                                        data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blog//blog_thumb2/blogimageHow-to-Hire-a-Dedicated-Development-Team-A-Complete-Guide-for-2024.webp"
+                                        alt="How to Hire a Dedicated Development Team – A Complete Guide for 2024"><span
+                                        class=" line-clamp-2">How to Hire a
+                                        Dedicated Development Team – A Complete
+                                        Guide for 2024</span></a></li>
+                            <li><a
+                                    href="https://www.imgglobalinfotech.com/blog/grocery-delivery-app-development"
+                                    class="flex gap-2"><img
+                                        class="w-20 aspect-[385/221] rounded-lg object-cover rounded-br-none"
+                                        width="385" height="217"
+                                        src="https://www.imgglobalinfotech.com/imgadmin2/images/blog//blog_thumb2/blogimageGrocery-Delivery-App-Development-Complete-Handbook-for-Your-Startups.webp"
+                                        data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blog//blog_thumb2/blogimageGrocery-Delivery-App-Development-Complete-Handbook-for-Your-Startups.webp"
+                                        alt="Grocery Delivery App Development- Complete Handbook for Your Startups"><span
+                                        class=" line-clamp-2">Grocery Delivery
+                                        App Development- Complete Handbook for
+                                        Your Startups</span></a></li>
+                            <li><a
+                                    href="https://www.imgglobalinfotech.com/blog/launch-fantasy-cricket-app-before-t20-world-cup"
+                                    class="flex gap-2"><img
+                                        class="w-20 aspect-[385/221] rounded-lg object-cover rounded-br-none"
+                                        width="385" height="217"
+                                        src="https://www.imgglobalinfotech.com/imgadmin2/images/blog//blog_thumb2/blogimageLaunch-Fantasy-Cricket-App-Before-T20-World-Cup-2024.webp"
+                                        data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blog//blog_thumb2/blogimageLaunch-Fantasy-Cricket-App-Before-T20-World-Cup-2024.webp"
+                                        alt="Launch Fantasy Cricket App Before T20 World Cup 2024"><span
+                                        class=" line-clamp-2">Launch Fantasy
+                                        Cricket App Before T20 World Cup
+                                        2024</span></a></li>
+                            <li><a
+                                    href="https://www.imgglobalinfotech.com/blog/cost-to-build-an-ecommerce-app-like-home-depot"
+                                    class="flex gap-2"><img
+                                        class="w-20 aspect-[385/221] rounded-lg object-cover rounded-br-none"
+                                        width="385" height="217"
+                                        src="https://www.imgglobalinfotech.com/imgadmin2/images/blog//blog_thumb2/blogimageHow-Much-Does-It-Cost-to-Build-an-eCommerce-App-Like-the-Home-Depot.webp"
+                                        data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blog//blog_thumb2/blogimageHow-Much-Does-It-Cost-to-Build-an-eCommerce-App-Like-the-Home-Depot.webp"
+                                        alt="How Much Does It Cost to Build an eCommerce App Like the Home Depot?"><span
+                                        class=" line-clamp-2">How Much Does It
+                                        Cost to Build an eCommerce App Like the
+                                        Home Depot?</span></a></li>
+                            <li><a
+                                    href="https://www.imgglobalinfotech.com/blog/on-demand-car-wash-development"
+                                    class="flex gap-2"><img
+                                        class="w-20 aspect-[385/221] rounded-lg object-cover rounded-br-none"
+                                        width="385" height="217"
+                                        src="https://www.imgglobalinfotech.com/imgadmin2/images/blog//blog_thumb2/blogimageOn-demand-Car-Wash-App-Development-Scope-Features-Revenue-Model.webp"
+                                        data-src="https://www.imgglobalinfotech.com/imgadmin2/images/blog//blog_thumb2/blogimageOn-demand-Car-Wash-App-Development-Scope-Features-Revenue-Model.webp"
+                                        alt="On-demand Car Wash App Development: Scope, Features, Revenue Model"><span
+                                        class=" line-clamp-2">On-demand Car Wash
+                                        App Development: Scope, Features,
+                                        Revenue Model</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- inner-section ends -->
+
+        <!-- footer section -->
+        <footer
+            class="relative bg-black py-8 sm:py-16 select-none text-white mt-8">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 z-[1] relative">
+                <div
+                    class="w-full flex flex-wrap py-8 gap-y-10 text-sm lg:text-base justify-between">
+                    <div class="w-full md:w-1/2 lg:w-1/3">
+                        <div class="flex flex-col w-full px-3">
+                            <div
+                                class="font-bold w-56 text-base lg:text-lg pb-4">
+                                <img class="size-full"
+                                    src="./assets/img/fantasy-logo.png"
+                                    alt></div>
+                            <div>FantasyBox attempts to provide best services to
+                                users by developing hassle free fantasy gaming
+                                apps that leaves both the customers and clients
+                                satisfied and happier.</div>
+                        </div>
+                        <div class="px-3 mt-4">
+                            <ul class="flex gap-3 ">
+                                <li>
+                                    <a
+                                        class="opacity-80  hover:text-theme1 duration-200"
+                                        href="https://www.facebook.com/fantasyboxsportsapp/">
+                                        <svg stroke="currentColor"
+                                            fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 512 512" height="24px"
+                                            width="24px"
+                                            xmlns="http://www.w3.org/2000/svg"><path
+                                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="opacity-80 hover:text-theme1 duration-200"
+                                        href="https://www.instagram.com/fantasyboxapp/">
+                                        <svg stroke="currentColor"
+                                            fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 448 512" height="24px"
+                                            width="24px"
+                                            xmlns="http://www.w3.org/2000/svg"><path
+                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="opacity-80 hover:text-theme1 duration-200"
+                                        href="https://twitter.com/fantasyboxapp">
+                                        <svg stroke="currentColor"
+                                            fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 448 512" height="24px"
+                                            width="24px"
+                                            xmlns="http://www.w3.org/2000/svg"><path
+                                                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="opacity-80 hover:text-theme1 duration-200"
+                                        href="https://www.linkedin.com/in/fantasy-box-417a33284/?original_referer=https%3A%2F%2Fwww.fantasybox.in%2F">
+                                        <svg stroke="currentColor"
+                                            fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 448 512" height="24px"
+                                            width="24px"
+                                            xmlns="http://www.w3.org/2000/svg"><path
+                                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4">
+                        <div class="flex flex-col w-full px-3">
+                            <div
+                                class="w-full font-bold text-base lg:text-lg pb-4">USEFUL
+                                LINKS</div>
+                            <a href="./about.html"
+                                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                                <svg class="w-2.5 h-2.5 opacity-60"
+                                    stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 448 512"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z"></path></svg>
+                                <span>About Us</span>
+                            </a>
+                            <a href="./work.html"
+                                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                                <svg class="w-2.5 h-2.5 opacity-60"
+                                    stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 448 512"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z"></path></svg>
+                                <span>Our Portfolio</span>
+                            </a>
+                            <a href="./blog.html"
+                                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                                <svg class="w-2.5 h-2.5 opacity-60"
+                                    stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 448 512"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z"></path></svg>
+                                <span>Blogs</span>
+                            </a>
+                            <a href="./contact.html"
+                                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                                <svg class="w-2.5 h-2.5 opacity-60"
+                                    stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 448 512"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M0 96C0 60.7 28.7 32 64 32H384c35.3 0 64 28.7 64 64V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96z"></path></svg>
+                                <span>Contact Us</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4">
+                        <div class="flex flex-col w-full px-3">
+                            <div
+                                class="w-full font-bold text-base lg:text-lg pb-4">CONTACT
+                                INFORMATION</div>
+                            <a href="javascript:;"
+                                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                                <svg stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 384 512"
+                                    height="24px" width="24px"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path></svg>
+                                <div>
+                                    <div>Address</div>
+                                    <div>Ridhi Sidhhi Tower, Vaishali Nagar,
+                                        Jaipur </div>
+                                </div>
+                            </a>
+                            <a href="./contact.html"
+                                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                                <svg stroke="currentColor" fill="none"
+                                    stroke-width="2" viewBox="0 0 24 24"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" height="24px"
+                                    width="24px"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <div>
+                                    <div>Need Help?</div>
+                                    <div>8645010203 </div>
+                                </div>
+                            </a>
+                            <a href="javascript:;"
+                                class="w-full opacity-80 hover:text-theme1 duration-200 py-4 md:py-1 hoverLink flex items-center gap-2">
+                                <svg stroke="currentColor" fill="none"
+                                    stroke-width="2" viewBox="0 0 24 24"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" height="24px"
+                                    width="24px"
+                                    xmlns="http://www.w3.org/2000/svg"><path
+                                        stroke="none" d="M0 0h24v24H0z"
+                                        fill="none"></path><path
+                                        d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path><path
+                                        d="M3 6l9 6l9 -6"></path><path
+                                        d="M15 18h6"></path><path
+                                        d="M18 15l3 3l-3 3"></path></svg>
+                                <div>
+                                    <div>Email Us At:</div>
+                                    <div>info@fantasybox.in </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full flex flex-wrap items-center gap-x-10 gap-y-5 justify-center pt-8 lg:pt-14 lg:mt-8 border-t border-white/20 text-xs lg:text-sm">
+                    <div class="w-auto opacity-80">©2019 -2024 Fantasybox . All
+                        Rights Reserved |</div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section ends -->
+
+    </body>
+</html>

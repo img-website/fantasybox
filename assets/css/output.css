@@ -963,8 +963,16 @@ video {
   margin-left: -100%;
 }
 
+.-mt-1{
+  margin-top: -0.25rem;
+}
+
 .-mt-10{
   margin-top: -2.5rem;
+}
+
+.-mt-2{
+  margin-top: -0.5rem;
 }
 
 .mb-0{
@@ -3416,6 +3424,11 @@ video {
   line-height: 1.5rem;
 }
 
+.text-base\/tight{
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -3426,6 +3439,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-sm\/tight{
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -3434,16 +3452,6 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-sm\/tight{
-  font-size: 0.875rem;
-  line-height: 1.25;
-}
-
-.text-base\/tight{
-  font-size: 1rem;
-  line-height: 1.25;
 }
 
 .font-bold{
@@ -3560,18 +3568,6 @@ video {
 
 .leading-\[130\%\]{
   line-height: 130%;
-}
-
-.leading-normal{
-  line-height: 1.5;
-}
-
-.leading-none{
-  line-height: 1;
-}
-
-.leading-tight{
-  line-height: 1.25;
 }
 
 .tracking-\[-0\.04em\]{
@@ -5789,6 +5785,11 @@ video {
     line-height: 1.75rem;
   }
 
+  .md\:text-lg\/tight{
+    font-size: 1.125rem;
+    line-height: 1.25;
+  }
+
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -5797,11 +5798,6 @@ video {
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-lg\/tight{
-    font-size: 1.125rem;
-    line-height: 1.25;
   }
 
   .md\:leading-6{

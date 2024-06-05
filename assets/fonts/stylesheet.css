@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Harabara';
+    src: url('Harabara.woff2') format('woff2'),
+        url('Harabara.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Painting With Chocolate';
+    src: url('PaintingWithChocolate.woff2') format('woff2'),
+        url('PaintingWithChocolate.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

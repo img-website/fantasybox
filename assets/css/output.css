@@ -799,10 +799,6 @@ video {
   top: 1.45rem;
 }
 
-.top-\[42\%\]{
-  top: 42%;
-}
-
 .isolate{
   isolation: isolate;
 }
@@ -2678,11 +2674,6 @@ video {
   border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
-.border-theme1{
-  --tw-border-opacity: 1;
-  border-color: rgb(243 137 15 / var(--tw-border-opacity));
-}
-
 .border-theme4\/10{
   border-color: rgb(23 19 71 / 0.1);
 }
@@ -3251,6 +3242,10 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
 .pb-6{
   padding-bottom: 1.5rem;
 }
@@ -3390,11 +3385,6 @@ video {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-2xl\/tight{
-  font-size: 1.5rem;
-  line-height: 1.25;
 }
 
 .text-3xl{
@@ -4262,8 +4252,16 @@ video {
   forced-color-adjust: none;
 }
 
+.\[-webkit-text-fill-color\:transparent\]{
+  -webkit-text-fill-color: transparent;
+}
+
 .\[-webkit-text-stroke-color\:white\]{
   -webkit-text-stroke-color: white;
+}
+
+.\[-webkit-text-stroke-width\:1px\]{
+  -webkit-text-stroke-width: 1px;
 }
 
 .\[background-image\:linear-gradient\(90deg\2c rgba\(56\2c 189\2c 248\2c 0\)_0\%\2c \#0EA5E9_32\.29\%\2c rgba\(236\2c 72\2c 153\2c 0\.3\)_67\.19\%\2c rgba\(236\2c 72\2c 153\2c 0\)_100\%\)\]{
@@ -4661,6 +4659,12 @@ video {
   height: 100%;
 }
 
+.after\:size-16::after{
+  content: var(--tw-content);
+  width: 4rem;
+  height: 4rem;
+}
+
 .after\:h-2::after{
   content: var(--tw-content);
   height: 0.5rem;
@@ -4811,11 +4815,6 @@ video {
 .last\:\*\:text-theme1 > *:last-child{
   --tw-text-opacity: 1;
   color: rgb(243 137 15 / var(--tw-text-opacity));
-}
-
-.last\:\*\:text-theme4 > *:last-child{
-  --tw-text-opacity: 1;
-  color: rgb(23 19 71 / var(--tw-text-opacity));
 }
 
 .empty\:hidden:empty{
@@ -5206,6 +5205,11 @@ video {
     line-height: 1.25;
   }
 
+  .max-xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .max-xl\:text-3xl\/tight{
     font-size: 1.875rem;
     line-height: 1.25;
@@ -5266,6 +5270,11 @@ video {
     text-align: center;
   }
 
+  .max-md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .max-md\:text-2xl\/tight{
     font-size: 1.5rem;
     line-height: 1.25;
@@ -5294,10 +5303,6 @@ video {
   .max-md\:text-xs{
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .max-md\:\[-webkit-text-fill-color\:white\]{
-    -webkit-text-fill-color: white;
   }
 }
 
@@ -5512,6 +5517,11 @@ video {
 
   .sm\:text-center{
     text-align: center;
+  }
+
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-base{
@@ -5771,14 +5781,6 @@ video {
 
   .md\:leading-6{
     line-height: 1.5rem;
-  }
-
-  .md\:\[-webkit-text-fill-color\:transparent\]{
-    -webkit-text-fill-color: transparent;
-  }
-
-  .md\:\[-webkit-text-stroke-width\:1px\]{
-    -webkit-text-stroke-width: 1px;
   }
 
   .md\:\[mask-image\:linear-gradient\(to_left\2c transparent\2c white\)\]{

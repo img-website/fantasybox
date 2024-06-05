@@ -875,6 +875,10 @@ video {
   order: 2;
 }
 
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+
 .float-start{
   float: inline-start;
 }
@@ -984,6 +988,10 @@ video {
 
 .-mt-10{
   margin-top: -2.5rem;
+}
+
+.mb-0{
+  margin-bottom: 0px;
 }
 
 .mb-10{
@@ -3918,6 +3926,10 @@ video {
   opacity: 0.3;
 }
 
+.opacity-40{
+  opacity: 0.4;
+}
+
 .opacity-50{
   opacity: 0.5;
 }
@@ -5535,6 +5547,10 @@ video {
     top: -28rem;
   }
 
+  .sm\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
   .sm\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
@@ -5543,6 +5559,10 @@ video {
   .sm\:my-4{
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .sm\:mb-0{
+    margin-bottom: 0px;
   }
 
   .sm\:ml-16{
@@ -5617,6 +5637,10 @@ video {
     transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -5627,6 +5651,14 @@ video {
 
   .sm\:items-center{
     align-items: center;
+  }
+
+  .sm\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .sm\:justify-end{
+    justify-content: flex-end;
   }
 
   .sm\:justify-center{
@@ -5666,6 +5698,11 @@ video {
   .sm\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .sm\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .sm\:py-16{
@@ -5729,6 +5766,10 @@ video {
 
   .sm\:underline{
     text-decoration-line: underline;
+  }
+
+  .sm\:opacity-80{
+    opacity: 0.8;
   }
 
   .sm\:blur-3xl{
@@ -5969,16 +6010,6 @@ video {
             mask-image: linear-gradient(to left,transparent,white);
   }
 
-  .md\:\*\:size-12 > *{
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .md\:\*\:size-10 > *{
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
   .md\:\*\:size-9 > *{
     width: 2.25rem;
     height: 2.25rem;
@@ -6118,6 +6149,10 @@ video {
     order: 2;
   }
 
+  .lg\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
   .lg\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
@@ -6254,8 +6289,20 @@ video {
     flex: none;
   }
 
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:justify-end{
+    justify-content: flex-end;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
   }
 
   .lg\:gap-x-8{

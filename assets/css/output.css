@@ -3592,6 +3592,11 @@ video {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .max-xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media not all and (min-width: 1024px){
@@ -3671,6 +3676,11 @@ video {
   .max-md\:text-xs{
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .max-md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
